@@ -66,9 +66,9 @@ Module DarkModeManager
             frmForm5.Guna2CustomGradientPanel1.FillColor3 = Color.FromArgb(64, 64, 64)
             frmForm5.Label3.ForeColor = Color.White
             frmForm5.Label4.ForeColor = Color.White
-            frmForm5.Label5.ForeColor = Color.White
-            frmForm5.Label6.ForeColor = Color.White
-            frmForm5.Label7.ForeColor = Color.White
+            'frmForm5.Label5.ForeColor = Color.White
+            'frmForm5.Label6.ForeColor = Color.White
+            'frmForm5.Label7.ForeColor = Color.White
             frmForm5.Panel4.BackColor = Color.FromArgb(64, 64, 64)
             frmForm5.Panel6.BackColor = Color.FromArgb(64, 64, 64)
             frmForm5.Panel1.BackColor = Color.FromArgb(64, 64, 64)
@@ -182,9 +182,9 @@ Module DarkModeManager
             frmForm5.Guna2CustomGradientPanel1.FillColor3 = Color.DodgerBlue
             frmForm5.Label3.ForeColor = Color.Black
             frmForm5.Label4.ForeColor = Color.Black
-            frmForm5.Label5.ForeColor = Color.Blue
-            frmForm5.Label6.ForeColor = Color.Blue
-            frmForm5.Label7.ForeColor = Color.Blue
+            'frmForm5.Label5.ForeColor = Color.Blue
+            'frmForm5.Label6.ForeColor = Color.Blue
+            'frmForm5.Label7.ForeColor = Color.Blue
             frmForm5.Panel4.BackColor = Color.White
             frmForm5.Panel6.BackColor = Color.White
             frmForm5.Panel1.BackColor = Color.White

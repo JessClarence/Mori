@@ -8,6 +8,8 @@ Imports K4os.Compression.LZ4.Streams.Adapters
 Imports System.IO
 Imports System.Text
 Imports Mysqlx.Crud
+Imports iTextSharp.text
+Imports iTextSharp.text.pdf
 
 Public Class CreateOrder
     Private Sub btnCompute_Click(sender As Object, e As EventArgs)
@@ -307,33 +309,58 @@ Public Class CreateOrder
 
 
     Private Sub SaveFormDataToFile()
-        ' Create a StringBuilder to store the form data
-        Dim sb As New StringBuilder()
-        sb.AppendLine("Receipt")
-        sb.AppendLine("Order Number: " & txtOrderNum.Text)
-        sb.AppendLine("Customer Name: " & txtCustomerName.Text)
-        sb.AppendLine("Date To Pick Up: " & dtpDateToPickUp.Value.ToString("dd-MM-yyyy"))
-        sb.AppendLine("Time To Pick Up: " & txtTimeToPickUp.Text & dudPmAM.Text)
-        sb.AppendLine("Service: " & cmbService.Text)
-        sb.AppendLine("Kilogram: " & txtKilogram.Text)
-        sb.AppendLine("Self Service: " & If(cbxSelfService.Checked, "Yes", "No"))
-        sb.AppendLine("FabCon: " & cmbfabcon.Text)
-        sb.AppendLine("FabCon Quantity: " & Convert.ToInt32(fabQty.Value))
-        sb.AppendLine("Powder: " & cmbpowder.Text)
-        sb.AppendLine("Powder Quantity: " & Convert.ToInt32(powderQty.Value))
-        sb.AppendLine("Total: " & txtTotal.Text)
+        ' Create a Document instance
+        Dim doc As New Document()
 
         ' Showing a save file dialog to allow the user to choose the file location
         Dim saveFileDialog As New SaveFileDialog()
-        saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
-        saveFileDialog.DefaultExt = ".txt"
+        saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|All Files (*.*)|*.*"
+        saveFileDialog.DefaultExt = ".pdf"
         saveFileDialog.AddExtension = True
-        saveFileDialog.FileName = txtCustomerName.Text & " " & "Order_" & txtOrderNum.Text.Trim() & ".txt"
+        saveFileDialog.FileName = txtCustomerName.Text & " " & "Order_" & txtOrderNum.Text.Trim() & ".pdf"
 
         If saveFileDialog.ShowDialog() = DialogResult.OK Then
+            Try
+                ' Create a PdfWriter to write to the file
+                Dim writer As PdfWriter = PdfWriter.GetInstance(doc, New FileStream(saveFileDialog.FileName, FileMode.Create))
 
-            File.WriteAllText(saveFileDialog.FileName, sb.ToString())
-            MessageBox.Show("Form data saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Open the document for writing
+                doc.Open()
+
+                ' Create a Paragraph to hold the form data
+                Dim paragraph As New Paragraph()
+                paragraph.Alignment = Element.ALIGN_LEFT
+
+                ' Add the form data to the Paragraph
+                paragraph.Add("Receipt" & vbLf)
+                paragraph.Add("---------------------------------------------------------------------------" & vbLf)
+                paragraph.Add("Order Number: " & txtOrderNum.Text & vbLf)
+                paragraph.Add("Customer Name: " & txtCustomerName.Text & vbLf)
+                paragraph.Add("---------------------------------------------------------------------------" & vbLf)
+                paragraph.Add("Date To Pick Up: " & dtpDateToPickUp.Value.ToString("dd-MM-yyyy") & vbLf)
+                paragraph.Add("Time To Pick Up: " & txtTimeToPickUp.Text & dudPmAM.Text & vbLf)
+                paragraph.Add("Service: " & cmbService.Text & vbLf)
+                paragraph.Add("Kilogram: " & txtKilogram.Text & vbLf)
+                paragraph.Add("Self Service: " & If(cbxSelfService.Checked, "Yes", "No") & vbLf)
+                paragraph.Add("FabCon: " & cmbfabcon.Text & vbLf)
+                paragraph.Add("FabCon Quantity: " & Convert.ToInt32(fabQty.Value) & vbLf)
+                paragraph.Add("Powder: " & cmbpowder.Text & vbLf)
+                paragraph.Add("Powder Quantity: " & Convert.ToInt32(powderQty.Value) & vbLf)
+                paragraph.Add("---------------------------------------------------------------------------" & vbLf)
+                paragraph.Add("Total: " & txtTotal.Text & vbLf)
+
+                ' Add the Paragraph to the document
+                doc.Add(paragraph)
+
+                ' Show a message box indicating successful save
+                MessageBox.Show("Form data saved successfully as PDF.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Catch ex As Exception
+                ' Show a message box if there's an error
+                MessageBox.Show("Error saving form data as PDF: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Finally
+                ' Close the document
+                doc.Close()
+            End Try
         End If
     End Sub
 
@@ -393,6 +420,8 @@ Public Class CreateOrder
         AutoScroll = True
         Dim rnd As New Random()
         Dim orderNumber As Integer = rnd.Next(100000, 999999)
+        'added code '
+        Dim startdate_v As Date = Date.Parse(dtpDateToPickUp.Value)
         txtOrderNum.Text = orderNumber.ToString()
         dtpDateToPickUp.Value = Date.Now
         dudPmAM.SelectedItem = "AM"
@@ -515,6 +544,9 @@ Public Class CreateOrder
         btnCompute.PerformClick()
     End Sub
 
+    Private Sub Guna2CustomGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2CustomGradientPanel1.Paint
+
+    End Sub
 
 
 

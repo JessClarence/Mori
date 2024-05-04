@@ -14,7 +14,7 @@ Public Class frmForm3
     End Sub
 
 
-
+    'PROBLEM'
     Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
         Dim searchTerm As String = txtSearch.Text.Trim().ToLower()
 
