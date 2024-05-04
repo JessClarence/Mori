@@ -22,7 +22,7 @@ Partial Class TransactionHistory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSearch = New Guna.UI2.WinForms.Guna2TextBox()
@@ -32,7 +32,7 @@ Partial Class TransactionHistory
         Me.Orders = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.OrderNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -156,16 +156,16 @@ Partial Class TransactionHistory
         Me.Orders.AllowUserToDeleteRows = False
         Me.Orders.AllowUserToResizeColumns = False
         Me.Orders.BackgroundColor = System.Drawing.SystemColors.ButtonFace
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Orders.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSkyBlue
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Orders.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.Orders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Orders.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.OrderNumber, Me.Column1, Me.Total})
+        Me.Orders.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.OrderNumber, Me.CustomerName, Me.Total})
         Me.Orders.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Orders.Location = New System.Drawing.Point(0, 0)
         Me.Orders.Margin = New System.Windows.Forms.Padding(2)
@@ -194,6 +194,7 @@ Partial Class TransactionHistory
         'OrderNumber
         '
         Me.OrderNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.OrderNumber.DataPropertyName = "orders_id"
         Me.OrderNumber.Frozen = True
         Me.OrderNumber.HeaderText = "Order Number"
         Me.OrderNumber.MinimumWidth = 6
@@ -201,16 +202,18 @@ Partial Class TransactionHistory
         Me.OrderNumber.ReadOnly = True
         Me.OrderNumber.Width = 98
         '
-        'Column1
+        'CustomerName
         '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.HeaderText = "Customer Name"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
+        Me.CustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.CustomerName.DataPropertyName = "customer_name"
+        Me.CustomerName.HeaderText = "Customer Name"
+        Me.CustomerName.Name = "CustomerName"
+        Me.CustomerName.ReadOnly = True
         '
         'Total
         '
         Me.Total.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Total.DataPropertyName = "total"
         Me.Total.HeaderText = "Total"
         Me.Total.MinimumWidth = 6
         Me.Total.Name = "Total"
@@ -245,6 +248,6 @@ Partial Class TransactionHistory
     Friend WithEvents Orders As DataGridView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents OrderNumber As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents CustomerName As DataGridViewTextBoxColumn
     Friend WithEvents Total As DataGridViewTextBoxColumn
 End Class

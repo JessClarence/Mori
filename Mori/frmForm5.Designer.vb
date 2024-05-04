@@ -48,7 +48,7 @@ Partial Class frmForm5
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1189, 647)
+        Me.Panel1.Size = New System.Drawing.Size(1265, 706)
         Me.Panel1.TabIndex = 0
         '
         'Panel2
@@ -58,7 +58,7 @@ Partial Class frmForm5
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1189, 647)
+        Me.Panel2.Size = New System.Drawing.Size(1265, 706)
         Me.Panel2.TabIndex = 0
         '
         'Panel3
@@ -71,17 +71,17 @@ Partial Class frmForm5
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1189, 647)
+        Me.Panel3.Size = New System.Drawing.Size(1265, 706)
         Me.Panel3.TabIndex = 0
         '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.Label4)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 303)
+        Me.Panel6.Location = New System.Drawing.Point(0, 278)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1189, 344)
+        Me.Panel6.Size = New System.Drawing.Size(1265, 428)
         Me.Panel6.TabIndex = 4
         '
         'Label4
@@ -89,7 +89,7 @@ Partial Class frmForm5
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(150, 146)
+        Me.Label4.Location = New System.Drawing.Point(42, 35)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(1145, 68)
@@ -104,18 +104,18 @@ Partial Class frmForm5
         Me.Panel4.Location = New System.Drawing.Point(0, 113)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1189, 190)
+        Me.Panel4.Size = New System.Drawing.Size(1265, 165)
         Me.Panel4.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(32, 37)
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(6, 69)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(1292, 57)
+        Me.Label3.Size = New System.Drawing.Size(1248, 51)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = resources.GetString("Label3.Text")
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -138,7 +138,7 @@ Partial Class frmForm5
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1189, 113)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1265, 113)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
         '
         'Label1
@@ -158,7 +158,7 @@ Partial Class frmForm5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1189, 647)
+        Me.ClientSize = New System.Drawing.Size(1265, 706)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)

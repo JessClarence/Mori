@@ -16,7 +16,6 @@ Public Class frmForm3
     End Sub
 
 
-    'PROBLEM'
     Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
         Dim searchTerm As String = txtSearch.Text.Trim().ToLower()
 
@@ -30,18 +29,15 @@ Public Class frmForm3
         End If
 
         For Each row As DataGridViewRow In Orders.Rows
-            Dim foundMatch As Boolean = False
-            ' Loop through each cell in the row
-            For Each cell As DataGridViewCell In row.Cells
-                ' Check if cell value contains the search term
-                If cell.Value IsNot Nothing AndAlso cell.Value.ToString().ToLower().Contains(searchTerm) Then
-                    foundMatch = True
-                    Exit For ' Exit loop once a match is found in this row
-                End If
-            Next
+            Dim orderNumber As String = row.Cells("OrderNumber").Value.ToString().ToLower()
+            Dim customerName As String = row.Cells("CustomerName").Value.ToString().ToLower()
 
-            ' Set the row's visibility based on whether a match was found
-            row.Visible = foundMatch
+            ' Check if the order number or customer name contains the search term
+            If orderNumber.Contains(searchTerm) OrElse customerName.Contains(searchTerm) Then
+                row.Visible = True
+            Else
+                row.Visible = False
+            End If
         Next
     End Sub
 
@@ -93,7 +89,7 @@ Public Class frmForm3
                     Command.Parameters.Clear()
                     reader.Close()
                 End Try
-
+                GetOrders(Orders)
             ElseIf Orders.Columns(e.ColumnIndex).Name = "btnDelete" Then
                 Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete this order?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 If result = DialogResult.Yes Then
@@ -122,7 +118,53 @@ Public Class frmForm3
                         conn.Close()
                     End Try
                 End If
+                GetOrders(Orders)
+            ElseIf Orders.Columns(e.ColumnIndex).Name = "btnPayment" Then
+                Dim result As DialogResult = MessageBox.Show("Confirmation to proceed to payment?", "Confirm Payment", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                If result = DialogResult.Yes Then
+                    Dim orderNumber As Integer = Convert.ToInt32(Orders.Rows(e.RowIndex).Cells("OrderNumber").Value)
+                    Dim customerName As String = Orders.Rows(e.RowIndex).Cells("CustomerName").Value.ToString()
+                    Dim total As Decimal = Convert.ToDecimal(Orders.Rows(e.RowIndex).Cells("Total").Value)
+
+                    ' Update payment status
+                    Dim updateQuery As String = "UPDATE create_order SET payment = @payment WHERE OrderNumber = @OrderNumber"
+                    Try
+                        Connect()
+                        With Command
+                            .Connection = conn
+                            .CommandText = updateQuery
+                            .Parameters.Clear()
+                            .Parameters.AddWithValue("@OrderNumber", orderNumber)
+                            .Parameters.AddWithValue("@payment", "complete")
+                            Dim rowsAffected As Integer = .ExecuteNonQuery()
+                            If rowsAffected > 0 Then
+                                MessageBox.Show("Order successfully paid.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                                ' Insert into transaction history
+                                Dim insertQuery As String = "INSERT INTO transac_history (orders_id, customer_name, total) VALUES (@order_id, @customer_name, @total)"
+                                .CommandText = insertQuery
+                                .Parameters.Clear()
+                                .Parameters.AddWithValue("@order_id", orderNumber)
+                                .Parameters.AddWithValue("@customer_name", customerName)
+                                .Parameters.AddWithValue("@total", total)
+                                .ExecuteNonQuery()
+
+                                ' Refresh DataGridView to reflect changes
+                                ' Or you can update the DataGridView cell directly if needed
+                                ' Example: Orders.Rows(e.RowIndex).Cells("Payment").Value = "complete"
+                            Else
+                                MessageBox.Show("Failed to mark order as paid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            End If
+                        End With
+                    Catch ex As Exception
+                        MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Finally
+                        conn.Close()
+                    End Try
+                End If
+                GetOrders(Orders)
             End If
+
         End If
     End Sub
 
@@ -130,7 +172,7 @@ Public Class frmForm3
         Try
             Connect()
 
-            Dim query As String = "SELECT * FROM create_order"
+            Dim query As String = "SELECT * FROM create_order WHERE payment = 'process'"
             With Command
                 .Connection = conn
                 .CommandText = query
@@ -182,6 +224,10 @@ Public Class frmForm3
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

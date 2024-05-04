@@ -3,7 +3,7 @@
         Try
             Dim OrderData As New CustomerData
             Connect()
-            query = "SELECT * FROM mori_laundry.create_order"
+            query = "SELECT * FROM mori_laundry.create_order WHERE payment = 'process'"
             With Command
                 .Connection = conn
                 .CommandText = query

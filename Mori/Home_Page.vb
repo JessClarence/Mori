@@ -54,6 +54,10 @@ Public Class Home_Page
     Private Sub btnTransHistory_Click(sender As Object, e As EventArgs) Handles btnTransHistory.Click
         ShowFormInPanel(TransactionHistory)
     End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class
 
 

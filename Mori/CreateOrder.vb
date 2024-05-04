@@ -229,7 +229,7 @@ Public Class CreateOrder
                 btnCompute.Focus()
                 Return
             End If
-            query = "INSERT INTO create_order (CustomerName, Address, ContactNum,GarmentType, Service, Kilogram, fabCon, powder, FabConQty, PowderQty, Total, OrderNumber, SelfService, TimeToPickUp, DateToPickUp,PMorAM) VALUES (@CustomerName, @Address, @ContactNum,@GarmentType, @Service, @Kilogram, @fabCon, @powder, @FabConQty, @PowderQty, @Total, @OrderNumber, @SelfService, @TimeToPickUp, @DateToPickUp, @PMorAM)"
+            query = "INSERT INTO create_order (CustomerName, Address, ContactNum,GarmentType, Service, Kilogram, fabCon, powder, FabConQty, PowderQty, Total, OrderNumber, SelfService, TimeToPickUp, DateToPickUp,PMorAM,payment) VALUES (@CustomerName, @Address, @ContactNum,@GarmentType, @Service, @Kilogram, @fabCon, @powder, @FabConQty, @PowderQty, @Total, @OrderNumber, @SelfService, @TimeToPickUp, @DateToPickUp, @PMorAM,@payment)"
             With Command
                 .Connection = conn
                 .CommandText = query
@@ -249,6 +249,7 @@ Public Class CreateOrder
                 .Parameters.AddWithValue("@SelfService", If(cbxSelfService.Checked, "Yes", "No"))
                 .Parameters.AddWithValue("@DateToPickUp", dtpDateToPickUp.Value)
                 Command.Parameters.AddWithValue("@TimeToPickUp", txtTimeToPickUp.Text)
+                Command.Parameters.AddWithValue("@payment", "process")
                 .Parameters.AddWithValue("@PMorAM", dudPmAM.SelectedItem.ToString())
                 Command.ExecuteNonQuery()
             End With
@@ -548,7 +549,8 @@ Public Class CreateOrder
 
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-
+    End Sub
 End Class
 

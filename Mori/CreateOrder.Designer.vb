@@ -23,47 +23,52 @@ Partial Class CreateOrder
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComputeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.txtOrderNum = New System.Windows.Forms.Label()
-        Me.label = New System.Windows.Forms.Label()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.emptyName = New System.Windows.Forms.Label()
-        Me.txtCustomerName = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.emptyAddress = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtCustomerAddress = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.emptyNumber = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtCustomerContactNum = New System.Windows.Forms.MaskedTextBox()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.dudPmAM = New System.Windows.Forms.DomainUpDown()
-        Me.txtTimeToPickUp = New System.Windows.Forms.TextBox()
-        Me.errordate = New System.Windows.Forms.Label()
-        Me.emptyTime = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.pmam = New System.Windows.Forms.Label()
-        Me.dtpDateToPickUp = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.dtpDateToPickUp = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.pmam = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.emptyTime = New System.Windows.Forms.Label()
+        Me.errordate = New System.Windows.Forms.Label()
+        Me.txtTimeToPickUp = New System.Windows.Forms.TextBox()
+        Me.dudPmAM = New System.Windows.Forms.DomainUpDown()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.txtCustomerContactNum = New System.Windows.Forms.MaskedTextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.emptyNumber = New System.Windows.Forms.Label()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.txtCustomerAddress = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.emptyAddress = New System.Windows.Forms.Label()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtCustomerName = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.emptyName = New System.Windows.Forms.Label()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.label = New System.Windows.Forms.Label()
+        Me.txtOrderNum = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtTotal = New System.Windows.Forms.Label()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.lblNoPowderQty = New System.Windows.Forms.Label()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.cmbService = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.cmbGarments = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.cmbService = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.powderQty = New System.Windows.Forms.NumericUpDown()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.lblNoKilo = New System.Windows.Forms.Label()
-        Me.cbxSelfService = New System.Windows.Forms.CheckBox()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.txtKilogram = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.cbxSelfService = New System.Windows.Forms.CheckBox()
+        Me.lblNoKilo = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -78,18 +83,15 @@ Partial Class CreateOrder
         Me.btnCompute = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.miniToolStrip = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ComputeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Panel3.SuspendLayout()
+        Me.Guna2CustomGradientPanel1.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Guna2Panel1.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
-        Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
+        Me.Guna2Panel4.SuspendLayout()
+        Me.Guna2Panel3.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         CType(Me.powderQty, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,8 +99,6 @@ Partial Class CreateOrder
         Me.Guna2Panel10.SuspendLayout()
         CType(Me.fabQty, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.Guna2CustomGradientPanel1.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel3
@@ -111,6 +111,51 @@ Partial Class CreateOrder
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1263, 113)
         Me.Panel3.TabIndex = 27
+        '
+        'Guna2CustomGradientPanel1
+        '
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.MenuStrip1)
+        Me.Guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.DodgerBlue
+        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1263, 113)
+        Me.Guna2CustomGradientPanel1.TabIndex = 0
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1263, 24)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.ComputeToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "F&ile"
+        '
+        'SaveToolStripMenuItem
+        '
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveToolStripMenuItem.ShowShortcutKeys = False
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.SaveToolStripMenuItem.Text = "&Save"
+        '
+        'ComputeToolStripMenuItem
+        '
+        Me.ComputeToolStripMenuItem.Name = "ComputeToolStripMenuItem"
+        Me.ComputeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
+        Me.ComputeToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ComputeToolStripMenuItem.Text = "&Compute"
         '
         'Panel2
         '
@@ -127,311 +172,6 @@ Partial Class CreateOrder
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(580, 591)
         Me.Panel2.TabIndex = 28
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.Controls.Add(Me.label)
-        Me.Guna2Panel1.Controls.Add(Me.txtOrderNum)
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(580, 80)
-        Me.Guna2Panel1.TabIndex = 52
-        '
-        'txtOrderNum
-        '
-        Me.txtOrderNum.AutoSize = True
-        Me.txtOrderNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOrderNum.Location = New System.Drawing.Point(243, 20)
-        Me.txtOrderNum.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.txtOrderNum.Name = "txtOrderNum"
-        Me.txtOrderNum.Size = New System.Drawing.Size(0, 20)
-        Me.txtOrderNum.TabIndex = 42
-        '
-        'label
-        '
-        Me.label.AutoSize = True
-        Me.label.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label.Location = New System.Drawing.Point(106, 20)
-        Me.label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.label.Name = "label"
-        Me.label.Size = New System.Drawing.Size(126, 20)
-        Me.label.TabIndex = 41
-        Me.label.Text = "Order Number:"
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.Controls.Add(Me.Label9)
-        Me.Guna2Panel2.Controls.Add(Me.txtCustomerName)
-        Me.Guna2Panel2.Controls.Add(Me.emptyName)
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 80)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(580, 79)
-        Me.Guna2Panel2.TabIndex = 53
-        '
-        'emptyName
-        '
-        Me.emptyName.AutoSize = True
-        Me.emptyName.ForeColor = System.Drawing.Color.Red
-        Me.emptyName.Location = New System.Drawing.Point(286, 50)
-        Me.emptyName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.emptyName.Name = "emptyName"
-        Me.emptyName.Size = New System.Drawing.Size(0, 13)
-        Me.emptyName.TabIndex = 43
-        '
-        'txtCustomerName
-        '
-        Me.txtCustomerName.BorderColor = System.Drawing.SystemColors.Control
-        Me.txtCustomerName.BorderRadius = 8
-        Me.txtCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtCustomerName.DefaultText = ""
-        Me.txtCustomerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtCustomerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtCustomerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtCustomerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtCustomerName.FillColor = System.Drawing.SystemColors.Control
-        Me.txtCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCustomerName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtCustomerName.ForeColor = System.Drawing.Color.Black
-        Me.txtCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCustomerName.Location = New System.Drawing.Point(280, 14)
-        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCustomerName.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtCustomerName.PlaceholderText = ""
-        Me.txtCustomerName.SelectedText = ""
-        Me.txtCustomerName.Size = New System.Drawing.Size(296, 32)
-        Me.txtCustomerName.TabIndex = 0
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(106, 14)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(60, 20)
-        Me.Label9.TabIndex = 1
-        Me.Label9.Text = "Name:"
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.Controls.Add(Me.txtCustomerAddress)
-        Me.Guna2Panel3.Controls.Add(Me.Label10)
-        Me.Guna2Panel3.Controls.Add(Me.emptyAddress)
-        Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 159)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(580, 78)
-        Me.Guna2Panel3.TabIndex = 54
-        '
-        'emptyAddress
-        '
-        Me.emptyAddress.AutoSize = True
-        Me.emptyAddress.ForeColor = System.Drawing.Color.Red
-        Me.emptyAddress.Location = New System.Drawing.Point(278, 52)
-        Me.emptyAddress.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.emptyAddress.Name = "emptyAddress"
-        Me.emptyAddress.Size = New System.Drawing.Size(0, 13)
-        Me.emptyAddress.TabIndex = 44
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(106, 20)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 20)
-        Me.Label10.TabIndex = 2
-        Me.Label10.Text = "Address:"
-        '
-        'txtCustomerAddress
-        '
-        Me.txtCustomerAddress.BorderColor = System.Drawing.SystemColors.Control
-        Me.txtCustomerAddress.BorderRadius = 8
-        Me.txtCustomerAddress.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtCustomerAddress.DefaultText = ""
-        Me.txtCustomerAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtCustomerAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtCustomerAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtCustomerAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtCustomerAddress.FillColor = System.Drawing.SystemColors.Control
-        Me.txtCustomerAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCustomerAddress.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtCustomerAddress.ForeColor = System.Drawing.Color.Black
-        Me.txtCustomerAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCustomerAddress.Location = New System.Drawing.Point(280, 8)
-        Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.txtCustomerAddress.Name = "txtCustomerAddress"
-        Me.txtCustomerAddress.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCustomerAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtCustomerAddress.PlaceholderText = ""
-        Me.txtCustomerAddress.SelectedText = ""
-        Me.txtCustomerAddress.Size = New System.Drawing.Size(296, 33)
-        Me.txtCustomerAddress.TabIndex = 1
-        '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.Controls.Add(Me.txtCustomerContactNum)
-        Me.Guna2Panel4.Controls.Add(Me.Label11)
-        Me.Guna2Panel4.Controls.Add(Me.emptyNumber)
-        Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel4.Location = New System.Drawing.Point(0, 237)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(580, 83)
-        Me.Guna2Panel4.TabIndex = 55
-        '
-        'emptyNumber
-        '
-        Me.emptyNumber.AutoSize = True
-        Me.emptyNumber.ForeColor = System.Drawing.Color.Red
-        Me.emptyNumber.Location = New System.Drawing.Point(293, 47)
-        Me.emptyNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.emptyNumber.Name = "emptyNumber"
-        Me.emptyNumber.Size = New System.Drawing.Size(0, 13)
-        Me.emptyNumber.TabIndex = 45
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(106, 20)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(144, 20)
-        Me.Label11.TabIndex = 3
-        Me.Label11.Text = "Contact Number:"
-        '
-        'txtCustomerContactNum
-        '
-        Me.txtCustomerContactNum.Location = New System.Drawing.Point(289, 22)
-        Me.txtCustomerContactNum.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtCustomerContactNum.Mask = "(999) 000-00000"
-        Me.txtCustomerContactNum.Name = "txtCustomerContactNum"
-        Me.txtCustomerContactNum.Size = New System.Drawing.Size(164, 20)
-        Me.txtCustomerContactNum.TabIndex = 2
-        '
-        'Guna2Panel5
-        '
-        Me.Guna2Panel5.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.Guna2Panel5.Controls.Add(Me.Label15)
-        Me.Guna2Panel5.Controls.Add(Me.dtpDateToPickUp)
-        Me.Guna2Panel5.Controls.Add(Me.pmam)
-        Me.Guna2Panel5.Controls.Add(Me.Label12)
-        Me.Guna2Panel5.Controls.Add(Me.emptyTime)
-        Me.Guna2Panel5.Controls.Add(Me.errordate)
-        Me.Guna2Panel5.Controls.Add(Me.txtTimeToPickUp)
-        Me.Guna2Panel5.Controls.Add(Me.dudPmAM)
-        Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Guna2Panel5.Location = New System.Drawing.Point(0, 320)
-        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(580, 163)
-        Me.Guna2Panel5.TabIndex = 56
-        '
-        'dudPmAM
-        '
-        Me.dudPmAM.Items.Add("AM")
-        Me.dudPmAM.Items.Add("PM")
-        Me.dudPmAM.Location = New System.Drawing.Point(436, 95)
-        Me.dudPmAM.Margin = New System.Windows.Forms.Padding(2)
-        Me.dudPmAM.Name = "dudPmAM"
-        Me.dudPmAM.ReadOnly = True
-        Me.dudPmAM.Size = New System.Drawing.Size(90, 20)
-        Me.dudPmAM.TabIndex = 5
-        Me.dudPmAM.Text = "AM"
-        '
-        'txtTimeToPickUp
-        '
-        Me.txtTimeToPickUp.Location = New System.Drawing.Point(280, 97)
-        Me.txtTimeToPickUp.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtTimeToPickUp.MaxLength = 7
-        Me.txtTimeToPickUp.Name = "txtTimeToPickUp"
-        Me.txtTimeToPickUp.Size = New System.Drawing.Size(75, 20)
-        Me.txtTimeToPickUp.TabIndex = 4
-        '
-        'errordate
-        '
-        Me.errordate.AutoSize = True
-        Me.errordate.ForeColor = System.Drawing.Color.Red
-        Me.errordate.Location = New System.Drawing.Point(278, 80)
-        Me.errordate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.errordate.Name = "errordate"
-        Me.errordate.Size = New System.Drawing.Size(0, 13)
-        Me.errordate.TabIndex = 49
-        '
-        'emptyTime
-        '
-        Me.emptyTime.AutoSize = True
-        Me.emptyTime.ForeColor = System.Drawing.Color.Red
-        Me.emptyTime.Location = New System.Drawing.Point(434, 123)
-        Me.emptyTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.emptyTime.Name = "emptyTime"
-        Me.emptyTime.Size = New System.Drawing.Size(0, 13)
-        Me.emptyTime.TabIndex = 48
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(106, 28)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(183, 20)
-        Me.Label12.TabIndex = 4
-        Me.Label12.Text = "Date to pick up order:"
-        '
-        'pmam
-        '
-        Me.pmam.AutoSize = True
-        Me.pmam.ForeColor = System.Drawing.Color.Red
-        Me.pmam.Location = New System.Drawing.Point(278, 124)
-        Me.pmam.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.pmam.Name = "pmam"
-        Me.pmam.Size = New System.Drawing.Size(0, 13)
-        Me.pmam.TabIndex = 50
-        '
-        'dtpDateToPickUp
-        '
-        Me.dtpDateToPickUp.Animated = True
-        Me.dtpDateToPickUp.BackColor = System.Drawing.Color.Transparent
-        Me.dtpDateToPickUp.BorderRadius = 4
-        Me.dtpDateToPickUp.Checked = True
-        Me.dtpDateToPickUp.CustomFormat = "MM-dd-yyyy"
-        Me.dtpDateToPickUp.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.dtpDateToPickUp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.dtpDateToPickUp.ForeColor = System.Drawing.Color.White
-        Me.dtpDateToPickUp.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpDateToPickUp.Location = New System.Drawing.Point(280, 20)
-        Me.dtpDateToPickUp.Margin = New System.Windows.Forms.Padding(2)
-        Me.dtpDateToPickUp.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.dtpDateToPickUp.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.dtpDateToPickUp.Name = "dtpDateToPickUp"
-        Me.dtpDateToPickUp.Size = New System.Drawing.Size(246, 43)
-        Me.dtpDateToPickUp.TabIndex = 3
-        Me.dtpDateToPickUp.UseTransparentBackground = True
-        Me.dtpDateToPickUp.Value = New Date(2024, 3, 1, 0, 0, 0, 0)
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(107, 97)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(168, 17)
-        Me.Label15.TabIndex = 51
-        Me.Label15.Text = "Time to pick up order:"
         '
         'btnSave
         '
@@ -458,6 +198,311 @@ Partial Class CreateOrder
         Me.btnSave.Text = "Save"
         Me.btnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.btnSave.UseTransparentBackground = True
+        '
+        'Guna2Panel5
+        '
+        Me.Guna2Panel5.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Guna2Panel5.Controls.Add(Me.Label15)
+        Me.Guna2Panel5.Controls.Add(Me.dtpDateToPickUp)
+        Me.Guna2Panel5.Controls.Add(Me.pmam)
+        Me.Guna2Panel5.Controls.Add(Me.Label12)
+        Me.Guna2Panel5.Controls.Add(Me.emptyTime)
+        Me.Guna2Panel5.Controls.Add(Me.errordate)
+        Me.Guna2Panel5.Controls.Add(Me.txtTimeToPickUp)
+        Me.Guna2Panel5.Controls.Add(Me.dudPmAM)
+        Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Guna2Panel5.Location = New System.Drawing.Point(0, 320)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel5.Name = "Guna2Panel5"
+        Me.Guna2Panel5.Size = New System.Drawing.Size(580, 163)
+        Me.Guna2Panel5.TabIndex = 56
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(107, 97)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(168, 17)
+        Me.Label15.TabIndex = 51
+        Me.Label15.Text = "Time to pick up order:"
+        '
+        'dtpDateToPickUp
+        '
+        Me.dtpDateToPickUp.Animated = True
+        Me.dtpDateToPickUp.BackColor = System.Drawing.Color.Transparent
+        Me.dtpDateToPickUp.BorderRadius = 4
+        Me.dtpDateToPickUp.Checked = True
+        Me.dtpDateToPickUp.CustomFormat = "MM-dd-yyyy"
+        Me.dtpDateToPickUp.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.dtpDateToPickUp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.dtpDateToPickUp.ForeColor = System.Drawing.Color.White
+        Me.dtpDateToPickUp.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpDateToPickUp.Location = New System.Drawing.Point(280, 20)
+        Me.dtpDateToPickUp.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtpDateToPickUp.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.dtpDateToPickUp.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.dtpDateToPickUp.Name = "dtpDateToPickUp"
+        Me.dtpDateToPickUp.Size = New System.Drawing.Size(246, 43)
+        Me.dtpDateToPickUp.TabIndex = 3
+        Me.dtpDateToPickUp.UseTransparentBackground = True
+        Me.dtpDateToPickUp.Value = New Date(2024, 3, 1, 0, 0, 0, 0)
+        '
+        'pmam
+        '
+        Me.pmam.AutoSize = True
+        Me.pmam.ForeColor = System.Drawing.Color.Red
+        Me.pmam.Location = New System.Drawing.Point(278, 124)
+        Me.pmam.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.pmam.Name = "pmam"
+        Me.pmam.Size = New System.Drawing.Size(0, 13)
+        Me.pmam.TabIndex = 50
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(106, 28)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(183, 20)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "Date to pick up order:"
+        '
+        'emptyTime
+        '
+        Me.emptyTime.AutoSize = True
+        Me.emptyTime.ForeColor = System.Drawing.Color.Red
+        Me.emptyTime.Location = New System.Drawing.Point(434, 123)
+        Me.emptyTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.emptyTime.Name = "emptyTime"
+        Me.emptyTime.Size = New System.Drawing.Size(0, 13)
+        Me.emptyTime.TabIndex = 48
+        '
+        'errordate
+        '
+        Me.errordate.AutoSize = True
+        Me.errordate.ForeColor = System.Drawing.Color.Red
+        Me.errordate.Location = New System.Drawing.Point(278, 80)
+        Me.errordate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.errordate.Name = "errordate"
+        Me.errordate.Size = New System.Drawing.Size(0, 13)
+        Me.errordate.TabIndex = 49
+        '
+        'txtTimeToPickUp
+        '
+        Me.txtTimeToPickUp.Location = New System.Drawing.Point(280, 97)
+        Me.txtTimeToPickUp.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTimeToPickUp.MaxLength = 7
+        Me.txtTimeToPickUp.Name = "txtTimeToPickUp"
+        Me.txtTimeToPickUp.Size = New System.Drawing.Size(75, 20)
+        Me.txtTimeToPickUp.TabIndex = 4
+        '
+        'dudPmAM
+        '
+        Me.dudPmAM.Items.Add("AM")
+        Me.dudPmAM.Items.Add("PM")
+        Me.dudPmAM.Location = New System.Drawing.Point(436, 95)
+        Me.dudPmAM.Margin = New System.Windows.Forms.Padding(2)
+        Me.dudPmAM.Name = "dudPmAM"
+        Me.dudPmAM.ReadOnly = True
+        Me.dudPmAM.Size = New System.Drawing.Size(90, 20)
+        Me.dudPmAM.TabIndex = 5
+        Me.dudPmAM.Text = "AM"
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.Controls.Add(Me.txtCustomerContactNum)
+        Me.Guna2Panel4.Controls.Add(Me.Label11)
+        Me.Guna2Panel4.Controls.Add(Me.emptyNumber)
+        Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel4.Location = New System.Drawing.Point(0, 237)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(580, 83)
+        Me.Guna2Panel4.TabIndex = 55
+        '
+        'txtCustomerContactNum
+        '
+        Me.txtCustomerContactNum.Location = New System.Drawing.Point(289, 22)
+        Me.txtCustomerContactNum.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtCustomerContactNum.Mask = "(999) 000-00000"
+        Me.txtCustomerContactNum.Name = "txtCustomerContactNum"
+        Me.txtCustomerContactNum.Size = New System.Drawing.Size(164, 20)
+        Me.txtCustomerContactNum.TabIndex = 2
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(106, 20)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(144, 20)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Contact Number:"
+        '
+        'emptyNumber
+        '
+        Me.emptyNumber.AutoSize = True
+        Me.emptyNumber.ForeColor = System.Drawing.Color.Red
+        Me.emptyNumber.Location = New System.Drawing.Point(293, 47)
+        Me.emptyNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.emptyNumber.Name = "emptyNumber"
+        Me.emptyNumber.Size = New System.Drawing.Size(0, 13)
+        Me.emptyNumber.TabIndex = 45
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.Controls.Add(Me.txtCustomerAddress)
+        Me.Guna2Panel3.Controls.Add(Me.Label10)
+        Me.Guna2Panel3.Controls.Add(Me.emptyAddress)
+        Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 159)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(580, 78)
+        Me.Guna2Panel3.TabIndex = 54
+        '
+        'txtCustomerAddress
+        '
+        Me.txtCustomerAddress.BorderColor = System.Drawing.SystemColors.Control
+        Me.txtCustomerAddress.BorderRadius = 8
+        Me.txtCustomerAddress.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtCustomerAddress.DefaultText = ""
+        Me.txtCustomerAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtCustomerAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtCustomerAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtCustomerAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtCustomerAddress.FillColor = System.Drawing.SystemColors.Control
+        Me.txtCustomerAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCustomerAddress.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtCustomerAddress.ForeColor = System.Drawing.Color.Black
+        Me.txtCustomerAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCustomerAddress.Location = New System.Drawing.Point(280, 8)
+        Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtCustomerAddress.Name = "txtCustomerAddress"
+        Me.txtCustomerAddress.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCustomerAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtCustomerAddress.PlaceholderText = ""
+        Me.txtCustomerAddress.SelectedText = ""
+        Me.txtCustomerAddress.Size = New System.Drawing.Size(296, 33)
+        Me.txtCustomerAddress.TabIndex = 1
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(106, 20)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(80, 20)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Address:"
+        '
+        'emptyAddress
+        '
+        Me.emptyAddress.AutoSize = True
+        Me.emptyAddress.ForeColor = System.Drawing.Color.Red
+        Me.emptyAddress.Location = New System.Drawing.Point(278, 52)
+        Me.emptyAddress.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.emptyAddress.Name = "emptyAddress"
+        Me.emptyAddress.Size = New System.Drawing.Size(0, 13)
+        Me.emptyAddress.TabIndex = 44
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.Controls.Add(Me.Label9)
+        Me.Guna2Panel2.Controls.Add(Me.txtCustomerName)
+        Me.Guna2Panel2.Controls.Add(Me.emptyName)
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 80)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(580, 79)
+        Me.Guna2Panel2.TabIndex = 53
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(106, 14)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(60, 20)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "Name:"
+        '
+        'txtCustomerName
+        '
+        Me.txtCustomerName.BorderColor = System.Drawing.SystemColors.Control
+        Me.txtCustomerName.BorderRadius = 8
+        Me.txtCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtCustomerName.DefaultText = ""
+        Me.txtCustomerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtCustomerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtCustomerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtCustomerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtCustomerName.FillColor = System.Drawing.SystemColors.Control
+        Me.txtCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCustomerName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtCustomerName.ForeColor = System.Drawing.Color.Black
+        Me.txtCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCustomerName.Location = New System.Drawing.Point(280, 14)
+        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtCustomerName.Name = "txtCustomerName"
+        Me.txtCustomerName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCustomerName.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtCustomerName.PlaceholderText = ""
+        Me.txtCustomerName.SelectedText = ""
+        Me.txtCustomerName.Size = New System.Drawing.Size(296, 32)
+        Me.txtCustomerName.TabIndex = 0
+        '
+        'emptyName
+        '
+        Me.emptyName.AutoSize = True
+        Me.emptyName.ForeColor = System.Drawing.Color.Red
+        Me.emptyName.Location = New System.Drawing.Point(286, 50)
+        Me.emptyName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.emptyName.Name = "emptyName"
+        Me.emptyName.Size = New System.Drawing.Size(0, 13)
+        Me.emptyName.TabIndex = 43
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.Controls.Add(Me.label)
+        Me.Guna2Panel1.Controls.Add(Me.txtOrderNum)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(580, 80)
+        Me.Guna2Panel1.TabIndex = 52
+        '
+        'label
+        '
+        Me.label.AutoSize = True
+        Me.label.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label.Location = New System.Drawing.Point(106, 20)
+        Me.label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.label.Name = "label"
+        Me.label.Size = New System.Drawing.Size(126, 20)
+        Me.label.TabIndex = 41
+        Me.label.Text = "Order Number:"
+        '
+        'txtOrderNum
+        '
+        Me.txtOrderNum.AutoSize = True
+        Me.txtOrderNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOrderNum.Location = New System.Drawing.Point(243, 20)
+        Me.txtOrderNum.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtOrderNum.Name = "txtOrderNum"
+        Me.txtOrderNum.Size = New System.Drawing.Size(0, 20)
+        Me.txtOrderNum.TabIndex = 42
         '
         'Label5
         '
@@ -493,17 +538,6 @@ Partial Class CreateOrder
         Me.Guna2Panel7.Size = New System.Drawing.Size(683, 80)
         Me.Guna2Panel7.TabIndex = 42
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(538, 46)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 20)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Service Type"
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -514,6 +548,17 @@ Partial Class CreateOrder
         Me.Label14.Size = New System.Drawing.Size(122, 20)
         Me.Label14.TabIndex = 3
         Me.Label14.Text = "Garment Type"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(538, 46)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(111, 20)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Service Type"
         '
         'lblNoPowderQty
         '
@@ -536,25 +581,6 @@ Partial Class CreateOrder
         Me.Guna2Panel8.Size = New System.Drawing.Size(683, 79)
         Me.Guna2Panel8.TabIndex = 43
         '
-        'cmbService
-        '
-        Me.cmbService.BackColor = System.Drawing.Color.Transparent
-        Me.cmbService.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.cmbService.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.cmbService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbService.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmbService.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmbService.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmbService.ForeColor = System.Drawing.Color.Black
-        Me.cmbService.ItemHeight = 30
-        Me.cmbService.Items.AddRange(New Object() {"Wash", "Wash And Dry", "Dry", "Complete Service"})
-        Me.cmbService.Location = New System.Drawing.Point(497, 17)
-        Me.cmbService.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmbService.Name = "cmbService"
-        Me.cmbService.Size = New System.Drawing.Size(206, 36)
-        Me.cmbService.StartIndex = 0
-        Me.cmbService.TabIndex = 6
-        '
         'cmbGarments
         '
         Me.cmbGarments.BackColor = System.Drawing.Color.Transparent
@@ -573,6 +599,25 @@ Partial Class CreateOrder
         Me.cmbGarments.Size = New System.Drawing.Size(206, 36)
         Me.cmbGarments.StartIndex = 0
         Me.cmbGarments.TabIndex = 7
+        '
+        'cmbService
+        '
+        Me.cmbService.BackColor = System.Drawing.Color.Transparent
+        Me.cmbService.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cmbService.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbService.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbService.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbService.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.cmbService.ForeColor = System.Drawing.Color.Black
+        Me.cmbService.ItemHeight = 30
+        Me.cmbService.Items.AddRange(New Object() {"Wash", "Wash And Dry", "Dry", "Complete Service"})
+        Me.cmbService.Location = New System.Drawing.Point(497, 17)
+        Me.cmbService.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbService.Name = "cmbService"
+        Me.cmbService.Size = New System.Drawing.Size(206, 36)
+        Me.cmbService.StartIndex = 0
+        Me.cmbService.TabIndex = 6
         '
         'powderQty
         '
@@ -596,38 +641,6 @@ Partial Class CreateOrder
         Me.Guna2Panel9.Size = New System.Drawing.Size(683, 78)
         Me.Guna2Panel9.TabIndex = 44
         '
-        'lblNoKilo
-        '
-        Me.lblNoKilo.AutoSize = True
-        Me.lblNoKilo.ForeColor = System.Drawing.Color.Red
-        Me.lblNoKilo.Location = New System.Drawing.Point(404, 65)
-        Me.lblNoKilo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblNoKilo.Name = "lblNoKilo"
-        Me.lblNoKilo.Size = New System.Drawing.Size(0, 13)
-        Me.lblNoKilo.TabIndex = 38
-        '
-        'cbxSelfService
-        '
-        Me.cbxSelfService.AutoSize = True
-        Me.cbxSelfService.Location = New System.Drawing.Point(509, 23)
-        Me.cbxSelfService.Margin = New System.Windows.Forms.Padding(2)
-        Me.cbxSelfService.Name = "cbxSelfService"
-        Me.cbxSelfService.Size = New System.Drawing.Size(83, 17)
-        Me.cbxSelfService.TabIndex = 8
-        Me.cbxSelfService.Text = "Self Service"
-        Me.cbxSelfService.UseVisualStyleBackColor = True
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(328, 23)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(78, 20)
-        Me.Label13.TabIndex = 35
-        Me.Label13.Text = "Kilogram"
-        '
         'txtKilogram
         '
         Me.txtKilogram.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -650,6 +663,38 @@ Partial Class CreateOrder
         Me.txtKilogram.Size = New System.Drawing.Size(64, 36)
         Me.txtKilogram.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.txtKilogram.TabIndex = 7
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(328, 23)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(78, 20)
+        Me.Label13.TabIndex = 35
+        Me.Label13.Text = "Kilogram"
+        '
+        'cbxSelfService
+        '
+        Me.cbxSelfService.AutoSize = True
+        Me.cbxSelfService.Location = New System.Drawing.Point(509, 23)
+        Me.cbxSelfService.Margin = New System.Windows.Forms.Padding(2)
+        Me.cbxSelfService.Name = "cbxSelfService"
+        Me.cbxSelfService.Size = New System.Drawing.Size(83, 17)
+        Me.cbxSelfService.TabIndex = 8
+        Me.cbxSelfService.Text = "Self Service"
+        Me.cbxSelfService.UseVisualStyleBackColor = True
+        '
+        'lblNoKilo
+        '
+        Me.lblNoKilo.AutoSize = True
+        Me.lblNoKilo.ForeColor = System.Drawing.Color.Red
+        Me.lblNoKilo.Location = New System.Drawing.Point(404, 65)
+        Me.lblNoKilo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNoKilo.Name = "lblNoKilo"
+        Me.lblNoKilo.Size = New System.Drawing.Size(0, 13)
+        Me.lblNoKilo.TabIndex = 38
         '
         'Label8
         '
@@ -851,51 +896,6 @@ Partial Class CreateOrder
         Me.miniToolStrip.Size = New System.Drawing.Size(1263, 24)
         Me.miniToolStrip.TabIndex = 0
         '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.ComputeToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "F&ile"
-        '
-        'SaveToolStripMenuItem
-        '
-        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.ShowShortcutKeys = False
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SaveToolStripMenuItem.Text = "&Save"
-        '
-        'ComputeToolStripMenuItem
-        '
-        Me.ComputeToolStripMenuItem.Name = "ComputeToolStripMenuItem"
-        Me.ComputeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ComputeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ComputeToolStripMenuItem.Text = "&Compute"
-        '
-        'Guna2CustomGradientPanel1
-        '
-        Me.Guna2CustomGradientPanel1.Controls.Add(Me.MenuStrip1)
-        Me.Guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.DodgerBlue
-        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1263, 113)
-        Me.Guna2CustomGradientPanel1.TabIndex = 0
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1263, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
         'CreateOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -904,24 +904,28 @@ Partial Class CreateOrder
         Me.ClientSize = New System.Drawing.Size(1265, 706)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "CreateOrder"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmForm2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel3.ResumeLayout(False)
+        Me.Guna2CustomGradientPanel1.ResumeLayout(False)
+        Me.Guna2CustomGradientPanel1.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel1.PerformLayout()
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel2.PerformLayout()
-        Me.Guna2Panel3.ResumeLayout(False)
-        Me.Guna2Panel3.PerformLayout()
-        Me.Guna2Panel4.ResumeLayout(False)
-        Me.Guna2Panel4.PerformLayout()
         Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel5.PerformLayout()
+        Me.Guna2Panel4.ResumeLayout(False)
+        Me.Guna2Panel4.PerformLayout()
+        Me.Guna2Panel3.ResumeLayout(False)
+        Me.Guna2Panel3.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
@@ -933,10 +937,6 @@ Partial Class CreateOrder
         CType(Me.fabQty, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Guna2CustomGradientPanel1.ResumeLayout(False)
-        Me.Guna2CustomGradientPanel1.PerformLayout()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
