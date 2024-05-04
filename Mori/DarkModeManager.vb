@@ -110,7 +110,7 @@ Module DarkModeManager
             EditForm.Label7.ForeColor = Color.White
             EditForm.Label8.ForeColor = Color.White
             EditForm.Label1.ForeColor = Color.White
-            EditForm.btnDelete.FillColor = Color.Silver
+            'EditForm.btnDelete.FillColor = Color.Silver
             EditForm.Label15.ForeColor = Color.Black
             Login_Form.Guna2CustomGradientPanel1.FillColor = Color.FromArgb(64, 64, 64)
             Login_Form.Guna2CustomGradientPanel1.FillColor2 = Color.DimGray
@@ -227,7 +227,7 @@ Module DarkModeManager
             EditForm.Label8.ForeColor = Color.Black
             EditForm.Label1.ForeColor = Color.Black
             EditForm.Label15.ForeColor = Color.Black
-            EditForm.btnDelete.FillColor = Color.FromArgb(56, 122, 223)
+            'EditForm.btnDelete.FillColor = Color.FromArgb(56, 122, 223)
             Login_Form.Guna2CustomGradientPanel1.FillColor = Color.FromArgb(56, 122, 223)
             Login_Form.Guna2CustomGradientPanel1.FillColor2 = Color.White
             Login_Form.Guna2CustomGradientPanel1.FillColor3 = Color.DodgerBlue

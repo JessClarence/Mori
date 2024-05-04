@@ -240,6 +240,12 @@
     </Compile>
     <Compile Include="OrderInformation.vb" />
     <Compile Include="SettingsManager.vb" />
+    <Compile Include="TransactionHistory.Designer.vb">
+      <DependentUpon>TransactionHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ChangePass.resx">
@@ -271,6 +277,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionHistory.resx">
+      <DependentUpon>TransactionHistory.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

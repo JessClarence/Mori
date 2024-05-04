@@ -51,7 +51,9 @@ Public Class Home_Page
         DarkModeManager.ToggleDarkMode(Me, SettingsManager.DarkModeEnabled)
     End Sub
 
-
+    Private Sub btnTransHistory_Click(sender As Object, e As EventArgs) Handles btnTransHistory.Click
+        ShowFormInPanel(TransactionHistory)
+    End Sub
 End Class
 
 

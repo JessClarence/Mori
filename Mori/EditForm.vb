@@ -272,43 +272,45 @@ Public Class EditForm
         End If
     End Sub
 
-    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete this order?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-        If result = DialogResult.Yes Then
-            ' Get the order number to delete
-            Dim orderNumber As Integer = Convert.ToInt32(txtOrderNum.Text)
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs)
+        'Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete this order?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        'If result = DialogResult.Yes Then
+        '    ' Get the order number to delete
+        '    Dim orderNumber As Integer = Convert.ToInt32(txtOrderNum.Text)
 
-            ' Construct the DELETE query
+        '    ' Construct the DELETE query
 
-            Try
-                Connect()
-                query = "DELETE FROM create_order WHERE OrderNumber = @OrderNumber"
-                With Command
-                    .Connection = conn
-                    .CommandText = query
-                    Command.Parameters.AddWithValue("@OrderNumber", orderNumber)
-                    Dim rowsAffected As Integer = Command.ExecuteNonQuery()
-                    If rowsAffected > 0 Then
-                        MessageBox.Show("Order deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        ' Remove the deleted row from the DataGridView
-                        Dim rowIndex As Integer = FindRowIndex(frmForm3.Orders, orderNumber)
-                        If rowIndex <> -1 Then
-                            frmForm3.Orders.Rows.RemoveAt(rowIndex)
-                        End If
-                        ' Close the EditForm after successful deletion
-                        Me.Close()
-                    Else
-                        MessageBox.Show("Failed to delete order.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    End If
-                End With
-            Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Finally
-                conn.Close()
-            End Try
-        End If
+        '    Try
+        '        Connect()
+        '        query = "DELETE FROM create_order WHERE OrderNumber = @OrderNumber"
+        '        With Command
+        '            .Connection = conn
+        '            .CommandText = query
+        '            Command.Parameters.AddWithValue("@OrderNumber", orderNumber)
+        '            Dim rowsAffected As Integer = Command.ExecuteNonQuery()
+        '            If rowsAffected > 0 Then
+        '                MessageBox.Show("Order deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        '                ' Remove the deleted row from the DataGridView
+        '                Dim rowIndex As Integer = FindRowIndex(frmForm3.Orders, orderNumber)
+        '                If rowIndex <> -1 Then
+        '                    frmForm3.Orders.Rows.RemoveAt(rowIndex)
+        '                End If
+        '                ' Close the EditForm after successful deletion
+        '                Me.Close()
+        '            Else
+        '                MessageBox.Show("Failed to delete order.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '            End If
+        '        End With
+        '    Catch ex As Exception
+        '        MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '    Finally
+        '        conn.Close()
+        '    End Try
+        'End If
 
     End Sub
+
+
     Private Function FindRowIndex(dataGridView As DataGridView, orderNumber As Integer) As Integer
         For Each row As DataGridViewRow In dataGridView.Rows
             If row.Cells("OrderNumber").Value IsNot Nothing AndAlso Convert.ToInt32(row.Cells("OrderNumber").Value) = orderNumber Then

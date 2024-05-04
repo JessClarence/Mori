@@ -48,7 +48,6 @@ Partial Class EditForm
         Me.txtTotal = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnDelete = New Guna.UI2.WinForms.Guna2Button()
         Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -111,9 +110,10 @@ Partial Class EditForm
         Me.cmbpowder.ForeColor = System.Drawing.Color.Black
         Me.cmbpowder.ItemHeight = 30
         Me.cmbpowder.Items.AddRange(New Object() {"none", "Ariel", "Breeze", "S & R He Powder"})
-        Me.cmbpowder.Location = New System.Drawing.Point(1101, 525)
+        Me.cmbpowder.Location = New System.Drawing.Point(826, 427)
+        Me.cmbpowder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbpowder.Name = "cmbpowder"
-        Me.cmbpowder.Size = New System.Drawing.Size(273, 36)
+        Me.cmbpowder.Size = New System.Drawing.Size(206, 36)
         Me.cmbpowder.StartIndex = 0
         Me.cmbpowder.TabIndex = 11
         '
@@ -121,9 +121,10 @@ Partial Class EditForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(998, 525)
+        Me.Label3.Location = New System.Drawing.Point(748, 427)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 25)
+        Me.Label3.Size = New System.Drawing.Size(68, 20)
         Me.Label3.TabIndex = 46
         Me.Label3.Text = "Powder"
         '
@@ -136,9 +137,10 @@ Partial Class EditForm
         Me.Guna2Panel10.Controls.Add(Me.Label7)
         Me.Guna2Panel10.Controls.Add(Me.fabQty)
         Me.Guna2Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel10.Location = New System.Drawing.Point(765, 378)
+        Me.Guna2Panel10.Location = New System.Drawing.Point(574, 307)
+        Me.Guna2Panel10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel10.Name = "Guna2Panel10"
-        Me.Guna2Panel10.Size = New System.Drawing.Size(1089, 93)
+        Me.Guna2Panel10.Size = New System.Drawing.Size(816, 76)
         Me.Guna2Panel10.TabIndex = 59
         '
         'Label6
@@ -146,9 +148,10 @@ Partial Class EditForm
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label6.Location = New System.Drawing.Point(645, 19)
+        Me.Label6.Location = New System.Drawing.Point(484, 15)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(99, 25)
+        Me.Label6.Size = New System.Drawing.Size(80, 20)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "EXTRAS"
         '
@@ -164,9 +167,10 @@ Partial Class EditForm
         Me.cmbfabcon.ForeColor = System.Drawing.Color.Black
         Me.cmbfabcon.ItemHeight = 30
         Me.cmbfabcon.Items.AddRange(New Object() {"none", "Downy", "Surf", "Del", "Colorsafe"})
-        Me.cmbfabcon.Location = New System.Drawing.Point(336, 53)
+        Me.cmbfabcon.Location = New System.Drawing.Point(252, 43)
+        Me.cmbfabcon.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbfabcon.Name = "cmbfabcon"
-        Me.cmbfabcon.Size = New System.Drawing.Size(273, 36)
+        Me.cmbfabcon.Size = New System.Drawing.Size(206, 36)
         Me.cmbfabcon.StartIndex = 0
         Me.cmbfabcon.TabIndex = 9
         '
@@ -174,18 +178,20 @@ Partial Class EditForm
         '
         Me.lblNoFabQty.AutoSize = True
         Me.lblNoFabQty.ForeColor = System.Drawing.Color.Red
-        Me.lblNoFabQty.Location = New System.Drawing.Point(875, 81)
+        Me.lblNoFabQty.Location = New System.Drawing.Point(656, 66)
+        Me.lblNoFabQty.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNoFabQty.Name = "lblNoFabQty"
-        Me.lblNoFabQty.Size = New System.Drawing.Size(0, 16)
+        Me.lblNoFabQty.Size = New System.Drawing.Size(0, 13)
         Me.lblNoFabQty.TabIndex = 39
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(233, 56)
+        Me.Label2.Location = New System.Drawing.Point(175, 46)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 25)
+        Me.Label2.Size = New System.Drawing.Size(74, 20)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Fab con"
         '
@@ -193,27 +199,30 @@ Partial Class EditForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(758, 53)
+        Me.Label7.Location = New System.Drawing.Point(568, 43)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(93, 25)
+        Me.Label7.Size = New System.Drawing.Size(76, 20)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Quantity"
         '
         'fabQty
         '
-        Me.fabQty.Location = New System.Drawing.Point(880, 56)
+        Me.fabQty.Location = New System.Drawing.Point(660, 46)
+        Me.fabQty.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.fabQty.Name = "fabQty"
         Me.fabQty.ReadOnly = True
-        Me.fabQty.Size = New System.Drawing.Size(120, 22)
+        Me.fabQty.Size = New System.Drawing.Size(90, 20)
         Me.fabQty.TabIndex = 10
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1523, 528)
+        Me.Label8.Location = New System.Drawing.Point(1142, 429)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(93, 25)
+        Me.Label8.Size = New System.Drawing.Size(76, 20)
         Me.Label8.TabIndex = 53
         Me.Label8.Text = "Quantity"
         '
@@ -224,9 +233,10 @@ Partial Class EditForm
         Me.Guna2Panel9.Controls.Add(Me.cbxSelfService)
         Me.Guna2Panel9.Controls.Add(Me.lblNoKilo)
         Me.Guna2Panel9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel9.Location = New System.Drawing.Point(765, 297)
+        Me.Guna2Panel9.Location = New System.Drawing.Point(574, 241)
+        Me.Guna2Panel9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel9.Name = "Guna2Panel9"
-        Me.Guna2Panel9.Size = New System.Drawing.Size(1089, 81)
+        Me.Guna2Panel9.Size = New System.Drawing.Size(816, 66)
         Me.Guna2Panel9.TabIndex = 58
         '
         'txtKilogram
@@ -242,13 +252,13 @@ Partial Class EditForm
         Me.txtKilogram.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtKilogram.ForeColor = System.Drawing.Color.Black
         Me.txtKilogram.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtKilogram.Location = New System.Drawing.Point(590, 4)
-        Me.txtKilogram.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtKilogram.Location = New System.Drawing.Point(442, 3)
+        Me.txtKilogram.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtKilogram.Name = "txtKilogram"
         Me.txtKilogram.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtKilogram.PlaceholderText = ""
         Me.txtKilogram.SelectedText = ""
-        Me.txtKilogram.Size = New System.Drawing.Size(86, 44)
+        Me.txtKilogram.Size = New System.Drawing.Size(64, 36)
         Me.txtKilogram.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.txtKilogram.TabIndex = 7
         '
@@ -256,18 +266,20 @@ Partial Class EditForm
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(415, 23)
+        Me.Label13.Location = New System.Drawing.Point(311, 19)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(97, 25)
+        Me.Label13.Size = New System.Drawing.Size(78, 20)
         Me.Label13.TabIndex = 35
         Me.Label13.Text = "Kilogram"
         '
         'cbxSelfService
         '
         Me.cbxSelfService.AutoSize = True
-        Me.cbxSelfService.Location = New System.Drawing.Point(719, 29)
+        Me.cbxSelfService.Location = New System.Drawing.Point(539, 24)
+        Me.cbxSelfService.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cbxSelfService.Name = "cbxSelfService"
-        Me.cbxSelfService.Size = New System.Drawing.Size(101, 20)
+        Me.cbxSelfService.Size = New System.Drawing.Size(83, 17)
         Me.cbxSelfService.TabIndex = 8
         Me.cbxSelfService.Text = "Self Service"
         Me.cbxSelfService.UseVisualStyleBackColor = True
@@ -276,17 +288,19 @@ Partial Class EditForm
         '
         Me.lblNoKilo.AutoSize = True
         Me.lblNoKilo.ForeColor = System.Drawing.Color.Red
-        Me.lblNoKilo.Location = New System.Drawing.Point(573, 61)
+        Me.lblNoKilo.Location = New System.Drawing.Point(430, 50)
+        Me.lblNoKilo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNoKilo.Name = "lblNoKilo"
-        Me.lblNoKilo.Size = New System.Drawing.Size(0, 16)
+        Me.lblNoKilo.Size = New System.Drawing.Size(0, 13)
         Me.lblNoKilo.TabIndex = 38
         '
         'powderQty
         '
-        Me.powderQty.Location = New System.Drawing.Point(1645, 528)
+        Me.powderQty.Location = New System.Drawing.Point(1234, 429)
+        Me.powderQty.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.powderQty.Name = "powderQty"
         Me.powderQty.ReadOnly = True
-        Me.powderQty.Size = New System.Drawing.Size(120, 22)
+        Me.powderQty.Size = New System.Drawing.Size(90, 20)
         Me.powderQty.TabIndex = 12
         '
         'Guna2Panel8
@@ -294,9 +308,10 @@ Partial Class EditForm
         Me.Guna2Panel8.Controls.Add(Me.cmbGarments)
         Me.Guna2Panel8.Controls.Add(Me.cmbService)
         Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel8.Location = New System.Drawing.Point(765, 217)
+        Me.Guna2Panel8.Location = New System.Drawing.Point(574, 176)
+        Me.Guna2Panel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(1089, 80)
+        Me.Guna2Panel8.Size = New System.Drawing.Size(816, 65)
         Me.Guna2Panel8.TabIndex = 57
         '
         'cmbGarments
@@ -311,9 +326,10 @@ Partial Class EditForm
         Me.cmbGarments.ForeColor = System.Drawing.Color.Black
         Me.cmbGarments.ItemHeight = 30
         Me.cmbGarments.Items.AddRange(New Object() {"Regular Clothes", "Thin Blankets, Bed Sheets, Bath Towels, Pillow Case", "Comforters", "Maong Pants"})
-        Me.cmbGarments.Location = New System.Drawing.Point(222, 20)
+        Me.cmbGarments.Location = New System.Drawing.Point(166, 16)
+        Me.cmbGarments.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbGarments.Name = "cmbGarments"
-        Me.cmbGarments.Size = New System.Drawing.Size(273, 36)
+        Me.cmbGarments.Size = New System.Drawing.Size(206, 36)
         Me.cmbGarments.StartIndex = 0
         Me.cmbGarments.TabIndex = 8
         '
@@ -329,9 +345,10 @@ Partial Class EditForm
         Me.cmbService.ForeColor = System.Drawing.Color.Black
         Me.cmbService.ItemHeight = 30
         Me.cmbService.Items.AddRange(New Object() {"Wash", "Wash And Dry", "Dry", "Complete Service"})
-        Me.cmbService.Location = New System.Drawing.Point(742, 17)
+        Me.cmbService.Location = New System.Drawing.Point(556, 14)
+        Me.cmbService.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cmbService.Name = "cmbService"
-        Me.cmbService.Size = New System.Drawing.Size(273, 36)
+        Me.cmbService.Size = New System.Drawing.Size(206, 36)
         Me.cmbService.StartIndex = 0
         Me.cmbService.TabIndex = 6
         '
@@ -339,9 +356,10 @@ Partial Class EditForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(809, 41)
+        Me.Label4.Location = New System.Drawing.Point(607, 33)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(140, 25)
+        Me.Label4.Size = New System.Drawing.Size(111, 20)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Service Type"
         '
@@ -349,9 +367,10 @@ Partial Class EditForm
         '
         Me.lblNoPowderQty.AutoSize = True
         Me.lblNoPowderQty.ForeColor = System.Drawing.Color.Red
-        Me.lblNoPowderQty.Location = New System.Drawing.Point(1642, 578)
+        Me.lblNoPowderQty.Location = New System.Drawing.Point(1232, 470)
+        Me.lblNoPowderQty.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNoPowderQty.Name = "lblNoPowderQty"
-        Me.lblNoPowderQty.Size = New System.Drawing.Size(0, 16)
+        Me.lblNoPowderQty.Size = New System.Drawing.Size(0, 13)
         Me.lblNoPowderQty.TabIndex = 54
         '
         'Guna2Panel7
@@ -359,18 +378,20 @@ Partial Class EditForm
         Me.Guna2Panel7.Controls.Add(Me.Label14)
         Me.Guna2Panel7.Controls.Add(Me.Label4)
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel7.Location = New System.Drawing.Point(765, 139)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(574, 113)
+        Me.Guna2Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(1089, 78)
+        Me.Guna2Panel7.Size = New System.Drawing.Size(816, 63)
         Me.Guna2Panel7.TabIndex = 56
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(261, 41)
+        Me.Label14.Location = New System.Drawing.Point(196, 33)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(149, 25)
+        Me.Label14.Size = New System.Drawing.Size(122, 20)
         Me.Label14.TabIndex = 4
         Me.Label14.Text = "Garment Type"
         '
@@ -378,9 +399,10 @@ Partial Class EditForm
         '
         Me.txtTotal.AutoSize = True
         Me.txtTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotal.Location = New System.Drawing.Point(1292, 663)
+        Me.txtTotal.Location = New System.Drawing.Point(969, 539)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.Size = New System.Drawing.Size(44, 22)
+        Me.txtTotal.Size = New System.Drawing.Size(36, 18)
         Me.txtTotal.TabIndex = 55
         Me.txtTotal.Text = "total"
         '
@@ -389,16 +411,16 @@ Partial Class EditForm
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Label5.Location = New System.Drawing.Point(1187, 660)
+        Me.Label5.Location = New System.Drawing.Point(890, 536)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 25)
+        Me.Label5.Size = New System.Drawing.Size(49, 20)
         Me.Label5.TabIndex = 47
         Me.Label5.Text = "Total"
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.Panel2.Controls.Add(Me.btnDelete)
         Me.Panel2.Controls.Add(Me.btnSave)
         Me.Panel2.Controls.Add(Me.Guna2Panel5)
         Me.Panel2.Controls.Add(Me.Guna2Panel4)
@@ -406,33 +428,11 @@ Partial Class EditForm
         Me.Panel2.Controls.Add(Me.Guna2Panel2)
         Me.Panel2.Controls.Add(Me.Guna2Panel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 139)
+        Me.Panel2.Location = New System.Drawing.Point(0, 113)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(765, 748)
+        Me.Panel2.Size = New System.Drawing.Size(574, 608)
         Me.Panel2.TabIndex = 52
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Animated = True
-        Me.btnDelete.BackColor = System.Drawing.Color.Transparent
-        Me.btnDelete.BorderRadius = 4
-        Me.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnDelete.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Image = Global.Mori.My.Resources.Resources.icons8_delete_24
-        Me.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnDelete.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnDelete.Location = New System.Drawing.Point(150, 550)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(150, 45)
-        Me.btnDelete.TabIndex = 15
-        Me.btnDelete.Text = "Delete"
-        Me.btnDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.btnDelete.UseTransparentBackground = True
         '
         'btnSave
         '
@@ -450,9 +450,10 @@ Partial Class EditForm
         Me.btnSave.Image = Global.Mori.My.Resources.Resources.icons8_save_24
         Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnSave.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnSave.Location = New System.Drawing.Point(513, 550)
+        Me.btnSave.Location = New System.Drawing.Point(385, 447)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(157, 45)
+        Me.btnSave.Size = New System.Drawing.Size(118, 37)
         Me.btnSave.TabIndex = 14
         Me.btnSave.Text = "Save"
         Me.btnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -469,18 +470,20 @@ Partial Class EditForm
         Me.Guna2Panel5.Controls.Add(Me.txtTimeToPickUp)
         Me.Guna2Panel5.Controls.Add(Me.dudPmAM)
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel5.Location = New System.Drawing.Point(0, 332)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(0, 269)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(765, 163)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(574, 132)
         Me.Guna2Panel5.TabIndex = 56
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(145, 97)
+        Me.Label15.Location = New System.Drawing.Point(109, 79)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(222, 25)
+        Me.Label15.Size = New System.Drawing.Size(182, 20)
         Me.Label15.TabIndex = 51
         Me.Label15.Text = "Time to pick up order:"
         '
@@ -494,11 +497,12 @@ Partial Class EditForm
         Me.dtpDateToPickUp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.dtpDateToPickUp.ForeColor = System.Drawing.Color.White
         Me.dtpDateToPickUp.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpDateToPickUp.Location = New System.Drawing.Point(389, 8)
+        Me.dtpDateToPickUp.Location = New System.Drawing.Point(292, 6)
+        Me.dtpDateToPickUp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtpDateToPickUp.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.dtpDateToPickUp.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.dtpDateToPickUp.Name = "dtpDateToPickUp"
-        Me.dtpDateToPickUp.Size = New System.Drawing.Size(328, 53)
+        Me.dtpDateToPickUp.Size = New System.Drawing.Size(246, 43)
         Me.dtpDateToPickUp.TabIndex = 3
         Me.dtpDateToPickUp.UseTransparentBackground = True
         Me.dtpDateToPickUp.Value = New Date(2024, 3, 1, 0, 0, 0, 0)
@@ -507,18 +511,20 @@ Partial Class EditForm
         '
         Me.pmam.AutoSize = True
         Me.pmam.ForeColor = System.Drawing.Color.Red
-        Me.pmam.Location = New System.Drawing.Point(547, 122)
+        Me.pmam.Location = New System.Drawing.Point(410, 99)
+        Me.pmam.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.pmam.Name = "pmam"
-        Me.pmam.Size = New System.Drawing.Size(0, 16)
+        Me.pmam.Size = New System.Drawing.Size(0, 13)
         Me.pmam.TabIndex = 50
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(145, 19)
+        Me.Label12.Location = New System.Drawing.Point(109, 15)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(219, 25)
+        Me.Label12.Size = New System.Drawing.Size(183, 20)
         Me.Label12.TabIndex = 4
         Me.Label12.Text = "Date to pick up order:"
         '
@@ -526,36 +532,40 @@ Partial Class EditForm
         '
         Me.emptyTime.AutoSize = True
         Me.emptyTime.ForeColor = System.Drawing.Color.Red
-        Me.emptyTime.Location = New System.Drawing.Point(376, 124)
+        Me.emptyTime.Location = New System.Drawing.Point(282, 101)
+        Me.emptyTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.emptyTime.Name = "emptyTime"
-        Me.emptyTime.Size = New System.Drawing.Size(0, 16)
+        Me.emptyTime.Size = New System.Drawing.Size(0, 13)
         Me.emptyTime.TabIndex = 48
         '
         'errordate
         '
         Me.errordate.AutoSize = True
         Me.errordate.ForeColor = System.Drawing.Color.Red
-        Me.errordate.Location = New System.Drawing.Point(383, 64)
+        Me.errordate.Location = New System.Drawing.Point(287, 52)
+        Me.errordate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.errordate.Name = "errordate"
-        Me.errordate.Size = New System.Drawing.Size(0, 16)
+        Me.errordate.Size = New System.Drawing.Size(0, 13)
         Me.errordate.TabIndex = 49
         '
         'txtTimeToPickUp
         '
-        Me.txtTimeToPickUp.Location = New System.Drawing.Point(389, 100)
+        Me.txtTimeToPickUp.Location = New System.Drawing.Point(292, 81)
+        Me.txtTimeToPickUp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtTimeToPickUp.MaxLength = 7
         Me.txtTimeToPickUp.Name = "txtTimeToPickUp"
-        Me.txtTimeToPickUp.Size = New System.Drawing.Size(84, 22)
+        Me.txtTimeToPickUp.Size = New System.Drawing.Size(64, 20)
         Me.txtTimeToPickUp.TabIndex = 4
         '
         'dudPmAM
         '
         Me.dudPmAM.Items.Add("AM")
         Me.dudPmAM.Items.Add("PM")
-        Me.dudPmAM.Location = New System.Drawing.Point(550, 97)
+        Me.dudPmAM.Location = New System.Drawing.Point(412, 79)
+        Me.dudPmAM.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dudPmAM.Name = "dudPmAM"
         Me.dudPmAM.ReadOnly = True
-        Me.dudPmAM.Size = New System.Drawing.Size(120, 22)
+        Me.dudPmAM.Size = New System.Drawing.Size(90, 20)
         Me.dudPmAM.TabIndex = 5
         Me.dudPmAM.Text = "AM"
         '
@@ -565,26 +575,29 @@ Partial Class EditForm
         Me.Guna2Panel4.Controls.Add(Me.Label11)
         Me.Guna2Panel4.Controls.Add(Me.emptyNumber)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel4.Location = New System.Drawing.Point(0, 242)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(0, 196)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(765, 90)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(574, 73)
         Me.Guna2Panel4.TabIndex = 55
         '
         'txtCustomerContactNum
         '
-        Me.txtCustomerContactNum.Location = New System.Drawing.Point(333, 30)
+        Me.txtCustomerContactNum.Location = New System.Drawing.Point(250, 24)
+        Me.txtCustomerContactNum.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCustomerContactNum.Mask = "(999) 000-00000"
         Me.txtCustomerContactNum.Name = "txtCustomerContactNum"
-        Me.txtCustomerContactNum.Size = New System.Drawing.Size(218, 22)
+        Me.txtCustomerContactNum.Size = New System.Drawing.Size(164, 20)
         Me.txtCustomerContactNum.TabIndex = 2
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(145, 30)
+        Me.Label11.Location = New System.Drawing.Point(109, 24)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(175, 25)
+        Me.Label11.Size = New System.Drawing.Size(144, 20)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Contact Number:"
         '
@@ -592,9 +605,10 @@ Partial Class EditForm
         '
         Me.emptyNumber.AutoSize = True
         Me.emptyNumber.ForeColor = System.Drawing.Color.Red
-        Me.emptyNumber.Location = New System.Drawing.Point(330, 57)
+        Me.emptyNumber.Location = New System.Drawing.Point(248, 46)
+        Me.emptyNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.emptyNumber.Name = "emptyNumber"
-        Me.emptyNumber.Size = New System.Drawing.Size(0, 16)
+        Me.emptyNumber.Size = New System.Drawing.Size(0, 13)
         Me.emptyNumber.TabIndex = 45
         '
         'Guna2Panel3
@@ -603,9 +617,10 @@ Partial Class EditForm
         Me.Guna2Panel3.Controls.Add(Me.Label10)
         Me.Guna2Panel3.Controls.Add(Me.emptyAddress)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 158)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 128)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(765, 84)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(574, 68)
         Me.Guna2Panel3.TabIndex = 54
         '
         'txtCustomerAddress
@@ -623,23 +638,24 @@ Partial Class EditForm
         Me.txtCustomerAddress.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtCustomerAddress.ForeColor = System.Drawing.Color.Black
         Me.txtCustomerAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCustomerAddress.Location = New System.Drawing.Point(333, 23)
-        Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtCustomerAddress.Location = New System.Drawing.Point(250, 19)
+        Me.txtCustomerAddress.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtCustomerAddress.Name = "txtCustomerAddress"
         Me.txtCustomerAddress.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtCustomerAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtCustomerAddress.PlaceholderText = ""
         Me.txtCustomerAddress.SelectedText = ""
-        Me.txtCustomerAddress.Size = New System.Drawing.Size(420, 41)
+        Me.txtCustomerAddress.Size = New System.Drawing.Size(315, 33)
         Me.txtCustomerAddress.TabIndex = 1
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(145, 23)
+        Me.Label10.Location = New System.Drawing.Point(109, 19)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(99, 25)
+        Me.Label10.Size = New System.Drawing.Size(80, 20)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Address:"
         '
@@ -647,9 +663,10 @@ Partial Class EditForm
         '
         Me.emptyAddress.AutoSize = True
         Me.emptyAddress.ForeColor = System.Drawing.Color.Red
-        Me.emptyAddress.Location = New System.Drawing.Point(330, 68)
+        Me.emptyAddress.Location = New System.Drawing.Point(248, 55)
+        Me.emptyAddress.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.emptyAddress.Name = "emptyAddress"
-        Me.emptyAddress.Size = New System.Drawing.Size(0, 16)
+        Me.emptyAddress.Size = New System.Drawing.Size(0, 13)
         Me.emptyAddress.TabIndex = 44
         '
         'Guna2Panel2
@@ -658,18 +675,20 @@ Partial Class EditForm
         Me.Guna2Panel2.Controls.Add(Me.txtCustomerName)
         Me.Guna2Panel2.Controls.Add(Me.emptyName)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 78)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 63)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(765, 80)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(574, 65)
         Me.Guna2Panel2.TabIndex = 53
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(145, 20)
+        Me.Label9.Location = New System.Drawing.Point(109, 16)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 25)
+        Me.Label9.Size = New System.Drawing.Size(60, 20)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Name:"
         '
@@ -688,23 +707,24 @@ Partial Class EditForm
         Me.txtCustomerName.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtCustomerName.ForeColor = System.Drawing.Color.Black
         Me.txtCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCustomerName.Location = New System.Drawing.Point(333, 17)
-        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtCustomerName.Location = New System.Drawing.Point(250, 14)
+        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtCustomerName.Name = "txtCustomerName"
         Me.txtCustomerName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtCustomerName.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtCustomerName.PlaceholderText = ""
         Me.txtCustomerName.SelectedText = ""
-        Me.txtCustomerName.Size = New System.Drawing.Size(420, 40)
+        Me.txtCustomerName.Size = New System.Drawing.Size(315, 32)
         Me.txtCustomerName.TabIndex = 0
         '
         'emptyName
         '
         Me.emptyName.AutoSize = True
         Me.emptyName.ForeColor = System.Drawing.Color.Red
-        Me.emptyName.Location = New System.Drawing.Point(340, 61)
+        Me.emptyName.Location = New System.Drawing.Point(255, 50)
+        Me.emptyName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.emptyName.Name = "emptyName"
-        Me.emptyName.Size = New System.Drawing.Size(0, 16)
+        Me.emptyName.Size = New System.Drawing.Size(0, 13)
         Me.emptyName.TabIndex = 43
         '
         'Guna2Panel1
@@ -713,17 +733,19 @@ Partial Class EditForm
         Me.Guna2Panel1.Controls.Add(Me.txtOrderNum)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(765, 78)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(574, 63)
         Me.Guna2Panel1.TabIndex = 52
         '
         'label
         '
         Me.label.AutoSize = True
         Me.label.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label.Location = New System.Drawing.Point(145, 25)
+        Me.label.Location = New System.Drawing.Point(109, 20)
+        Me.label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label.Name = "label"
-        Me.label.Size = New System.Drawing.Size(155, 25)
+        Me.label.Size = New System.Drawing.Size(126, 20)
         Me.label.TabIndex = 41
         Me.label.Text = "Order Number:"
         '
@@ -731,9 +753,10 @@ Partial Class EditForm
         '
         Me.txtOrderNum.AutoSize = True
         Me.txtOrderNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOrderNum.Location = New System.Drawing.Point(328, 25)
+        Me.txtOrderNum.Location = New System.Drawing.Point(246, 20)
+        Me.txtOrderNum.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.txtOrderNum.Name = "txtOrderNum"
-        Me.txtOrderNum.Size = New System.Drawing.Size(0, 25)
+        Me.txtOrderNum.Size = New System.Drawing.Size(0, 20)
         Me.txtOrderNum.TabIndex = 42
         '
         'btnCompute
@@ -749,9 +772,10 @@ Partial Class EditForm
         Me.btnCompute.Image = Global.Mori.My.Resources.Resources.icons8_check_50
         Me.btnCompute.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnCompute.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnCompute.Location = New System.Drawing.Point(1528, 689)
+        Me.btnCompute.Location = New System.Drawing.Point(1146, 560)
+        Me.btnCompute.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCompute.Name = "btnCompute"
-        Me.btnCompute.Size = New System.Drawing.Size(161, 45)
+        Me.btnCompute.Size = New System.Drawing.Size(121, 37)
         Me.btnCompute.TabIndex = 13
         Me.btnCompute.Text = "Compute"
         Me.btnCompute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -762,8 +786,9 @@ Partial Class EditForm
         Me.Panel3.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1854, 139)
+        Me.Panel3.Size = New System.Drawing.Size(1390, 113)
         Me.Panel3.TabIndex = 51
         '
         'Guna2CustomGradientPanel1
@@ -773,8 +798,9 @@ Partial Class EditForm
         Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
         Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.DodgerBlue
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1854, 139)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1390, 113)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
         '
         'MenuStrip1
@@ -783,7 +809,8 @@ Partial Class EditForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1854, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1390, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -791,39 +818,40 @@ Partial Class EditForm
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.ComputeToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "F&ile"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.SaveToolStripMenuItem.Text = "&Save"
         '
         'ComputeToolStripMenuItem
         '
         Me.ComputeToolStripMenuItem.Name = "ComputeToolStripMenuItem"
         Me.ComputeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ComputeToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.ComputeToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.ComputeToolStripMenuItem.Text = "&Compute"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1264, 663)
+        Me.Label1.Location = New System.Drawing.Point(948, 539)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(22, 22)
+        Me.Label1.Size = New System.Drawing.Size(18, 18)
         Me.Label1.TabIndex = 60
         Me.Label1.Text = "₱"
         '
         'EditForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(1854, 887)
+        Me.ClientSize = New System.Drawing.Size(1390, 721)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmbpowder)
         Me.Controls.Add(Me.btnCompute)
@@ -839,6 +867,7 @@ Partial Class EditForm
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "EditForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mori Laundry EditForm"
@@ -923,7 +952,6 @@ Partial Class EditForm
     Friend WithEvents txtOrderNum As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents btnDelete As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents cmbGarments As Guna.UI2.WinForms.Guna2ComboBox
