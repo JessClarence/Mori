@@ -37,7 +37,7 @@ Partial Class frmForm4
         Me.Panel1.Controls.Add(Me.sldbtn)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1265, 706)
         Me.Panel1.TabIndex = 0
@@ -70,7 +70,7 @@ Partial Class frmForm4
         Me.sldbtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.sldbtn.IsOn = False
         Me.sldbtn.Location = New System.Drawing.Point(128, 144)
-        Me.sldbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sldbtn.Margin = New System.Windows.Forms.Padding(2)
         Me.sldbtn.Name = "sldbtn"
         Me.sldbtn.Size = New System.Drawing.Size(52, 28)
         Me.sldbtn.TabIndex = 0
@@ -83,7 +83,7 @@ Partial Class frmForm4
         Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
         Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.DodgerBlue
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1265, 113)
         Me.Guna2CustomGradientPanel1.TabIndex = 1
@@ -96,7 +96,7 @@ Partial Class frmForm4
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmForm4"
         Me.Text = "frmForm4"
         Me.Panel1.ResumeLayout(False)

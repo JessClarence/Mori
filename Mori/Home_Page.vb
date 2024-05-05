@@ -4,7 +4,7 @@ Imports Guna.UI2.WinForms
 
 Public Class Home_Page
     'Showing Panels for Create Order, Update Records, Settings and About Us
-    Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
+    Private Sub btnCreate_Click(sender As Object, e As EventArgs)
         ShowFormInPanel(CreateOrder)
     End Sub
 
@@ -19,7 +19,7 @@ Public Class Home_Page
     Private Sub btnAboutus_Click(sender As Object, e As EventArgs) Handles btnAboutus.Click
         ShowFormInPanel(frmForm5)
     End Sub
-    Private Sub ShowFormInPanel(formToShow As Form)
+    Public Sub ShowFormInPanel(formToShow As Form)
         PanelContainer.Controls.Clear()
 
         If Not PanelContainer.Controls.Contains(formToShow) Then

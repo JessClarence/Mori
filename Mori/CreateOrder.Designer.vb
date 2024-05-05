@@ -83,6 +83,7 @@ Partial Class CreateOrder
         Me.btnCompute = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.miniToolStrip = New System.Windows.Forms.MenuStrip()
+        Me.btnBack = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3.SuspendLayout()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -160,6 +161,7 @@ Partial Class CreateOrder
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Panel2.Controls.Add(Me.btnBack)
         Me.Panel2.Controls.Add(Me.btnSave)
         Me.Panel2.Controls.Add(Me.Guna2Panel5)
         Me.Panel2.Controls.Add(Me.Guna2Panel4)
@@ -896,6 +898,30 @@ Partial Class CreateOrder
         Me.miniToolStrip.Size = New System.Drawing.Size(1263, 24)
         Me.miniToolStrip.TabIndex = 0
         '
+        'btnBack
+        '
+        Me.btnBack.Animated = True
+        Me.btnBack.BackColor = System.Drawing.Color.Transparent
+        Me.btnBack.BorderColor = System.Drawing.Color.LightCoral
+        Me.btnBack.BorderRadius = 4
+        Me.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnBack.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnBack.ForeColor = System.Drawing.Color.White
+        Me.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnBack.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnBack.Location = New System.Drawing.Point(236, 511)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.PressedColor = System.Drawing.Color.AliceBlue
+        Me.btnBack.Size = New System.Drawing.Size(97, 37)
+        Me.btnBack.TabIndex = 57
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseTransparentBackground = True
+        '
         'CreateOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1002,4 +1028,5 @@ Partial Class CreateOrder
     Friend WithEvents btnCompute As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents miniToolStrip As MenuStrip
+    Friend WithEvents btnBack As Guna.UI2.WinForms.Guna2Button
 End Class

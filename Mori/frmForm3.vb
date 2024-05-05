@@ -230,4 +230,8 @@ Public Class frmForm3
     Private Sub Button1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
+        Home_Page.ShowFormInPanel(CreateOrder)
+    End Sub
 End Class

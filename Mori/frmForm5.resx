@@ -117,15 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label4.Text" xml:space="preserve">
-    <value> DEVELOPERS
-
-This laundry desktop application was created in March 2024 due to the collaborative efforts of the developers, for the fulfillment of their final project in Software Design (CPE 223) 
-at The University of Mindanao.</value>
-  </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value> WELCOME to Mori Laundry Shop, founded in 2023 in Gravahan, Matina, Davao City, Davao del Sur. Owned by Mrs. [Jackie Mori], our establishment prides itself on deliveringquality laundry services with care 
-and dedication.Operating as early as 7 AM to 7 PM daily, we are committed to ensuring the utmost cleanliness and freshness of your garments. With a focus on quality, convenience, and customer satisfaction,
-Mori Laundry Shop has become a trusted name in the community of Gravahan. Whether it's a busy workday school day or a relaxing weekend, trust us to handle your laundry justly.</value>
-  </data>
 </root>

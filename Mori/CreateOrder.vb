@@ -552,5 +552,9 @@ Public Class CreateOrder
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Home_Page.ShowFormInPanel(frmForm3)
+    End Sub
 End Class
 
