@@ -30,10 +30,10 @@ Partial Class TransactionHistory
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Orders = New System.Windows.Forms.DataGridView()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.OrderNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.Orders, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -179,18 +179,6 @@ Partial Class TransactionHistory
         Me.Orders.Size = New System.Drawing.Size(1183, 512)
         Me.Orders.TabIndex = 6
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.Guna2CustomGradientPanel1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1183, 113)
-        Me.Panel1.TabIndex = 2
-        '
         'OrderNumber
         '
         Me.OrderNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
@@ -200,7 +188,7 @@ Partial Class TransactionHistory
         Me.OrderNumber.MinimumWidth = 6
         Me.OrderNumber.Name = "OrderNumber"
         Me.OrderNumber.ReadOnly = True
-        Me.OrderNumber.Width = 98
+        Me.OrderNumber.Width = 90
         '
         'CustomerName
         '
@@ -219,6 +207,18 @@ Partial Class TransactionHistory
         Me.Total.Name = "Total"
         Me.Total.ReadOnly = True
         Me.Total.Width = 56
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.Guna2CustomGradientPanel1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1183, 113)
+        Me.Panel1.TabIndex = 2
         '
         'TransactionHistory
         '

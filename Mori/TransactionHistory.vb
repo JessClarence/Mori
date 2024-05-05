@@ -35,4 +35,29 @@ Public Class TransactionHistory
         End Try
 
     End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        Dim searchTerm As String = txtSearch.Text.Trim().ToLower()
+
+        ' Check if search term is empty
+        If String.IsNullOrEmpty(searchTerm) Then
+            ' If search term is empty, show all data
+            For Each row As DataGridViewRow In Orders.Rows
+                row.Visible = True
+            Next
+            Return
+        End If
+
+        For Each row As DataGridViewRow In Orders.Rows
+            Dim orderNumber As String = row.Cells("OrderNumber").Value.ToString().ToLower()
+            Dim customerName As String = row.Cells("CustomerName").Value.ToString().ToLower()
+
+            ' Check if the order number or customer name contains the search term
+            If orderNumber.Contains(searchTerm) OrElse customerName.Contains(searchTerm) Then
+                row.Visible = True
+            Else
+                row.Visible = False
+            End If
+        Next
+    End Sub
 End Class

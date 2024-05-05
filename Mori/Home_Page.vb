@@ -58,6 +58,19 @@ Public Class Home_Page
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
+
+    Private Sub Guna2CustomGradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2CustomGradientPanel1.Paint
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Me.Close()
+        Login_Form.Show()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
 
 
