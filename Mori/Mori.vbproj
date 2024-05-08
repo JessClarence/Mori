@@ -181,6 +181,12 @@
     <Compile Include="Forms\CreateProducts.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\EditProducts.Designer.vb">
+      <DependentUpon>EditProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Products.Designer.vb">
       <DependentUpon>Products.vb</DependentUpon>
     </Compile>
@@ -265,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditForm.resx">
       <DependentUpon>EditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProducts.resx">
+      <DependentUpon>EditProducts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

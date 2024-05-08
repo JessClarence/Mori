@@ -1,4 +1,7 @@
-﻿Public Module OrderInformation
+﻿Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
+
+Public Module OrderInformation
     Public Sub GetOrders(OrdersList As DataGridView)
         Try
             Dim OrderData As New CustomerData
@@ -66,17 +69,65 @@
             OrdersList.Rows.Clear()
             While reader.Read
                 With OrderData
-
+                    .ProductID = reader("id").ToString()
                     .ProductName = reader("product").ToString()
                     .Type = reader("type").ToString()
                     .Amount = reader("amount").ToString()
                 End With
-                OrdersList.Rows.Add(OrderData.ProductName, OrderData.Type, OrderData.Amount)
+                OrdersList.Rows.Add(OrderData.ProductID, OrderData.ProductName, OrderData.Type, OrderData.Amount)
             End While
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
+
+    Public Function GetFabConProducts() As List(Of KeyValuePair(Of Integer, String))
+        Dim fabConProducts As New List(Of KeyValuePair(Of Integer, String))()
+
+        Try
+            Connect() ' Assuming Connect() establishes the MySQL database connection
+            Dim query As String = "SELECT product,amount FROM mori_laundry.product WHERE type = 'FabCon'"
+
+            Using Command As New MySqlCommand(query, conn)
+                Using reader As MySqlDataReader = Command.ExecuteReader()
+                    While reader.Read()
+                        Dim amount As Integer = DirectCast(reader("amount"), Integer)
+                        Dim productName As String = DirectCast(reader("product"), String)
+                        fabConProducts.Add(New KeyValuePair(Of Integer, String)(amount, productName))
+                    End While
+                End Using
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+
+        Return fabConProducts
+    End Function
+
+    Public Function GetPowderProducts() As List(Of KeyValuePair(Of Integer, String))
+        Dim fabConProducts As New List(Of KeyValuePair(Of Integer, String))()
+
+        Try
+            Connect() ' Assuming Connect() establishes the MySQL database connection
+            Dim query As String = "SELECT product,amount FROM mori_laundry.product WHERE type = 'Powder'"
+
+            Using Command As New MySqlCommand(query, conn)
+                Using reader As MySqlDataReader = Command.ExecuteReader()
+                    While reader.Read()
+                        Dim amount As Integer = DirectCast(reader("amount"), Integer)
+                        Dim productName As String = DirectCast(reader("product"), String)
+                        fabConProducts.Add(New KeyValuePair(Of Integer, String)(amount, productName))
+                    End While
+                End Using
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+
+        Return fabConProducts
+    End Function
+
+
 
 
 End Module

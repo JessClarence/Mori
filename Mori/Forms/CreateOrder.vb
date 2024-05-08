@@ -10,6 +10,8 @@ Imports System.Text
 Imports Mysqlx.Crud
 Imports iTextSharp.text
 Imports iTextSharp.text.pdf
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Menu
+Imports System.ComponentModel
 
 Public Class CreateOrder
     Private Sub btnCompute_Click(sender As Object, e As EventArgs)
@@ -143,16 +145,16 @@ Public Class CreateOrder
     End Function
 
     Private Sub cmbfabcon_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbfabcon.SelectedIndexChanged
-        If cmbfabcon.SelectedItem = "none" Then
-            fabQty.Value = 0
+        'If cmbfabcon.SelectedItem = "none" Then
+        '    fabQty.Value = 0
 
-        End If
+        'End If
     End Sub
 
     Private Sub cmbpowder_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbpowder.SelectedIndexChanged
-        If cmbpowder.SelectedItem = "none" Then
-            powderQty.Value = 0
-        End If
+        'If cmbpowder.SelectedItem = "none" Then
+        '    powderQty.Value = 0
+        'End If
     End Sub
 
     Private Sub cmbService_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbService.SelectedIndexChanged
@@ -426,6 +428,10 @@ Public Class CreateOrder
         txtOrderNum.Text = orderNumber.ToString()
         dtpDateToPickUp.Value = Date.Now
         dudPmAM.SelectedItem = "AM"
+        'dropdown'
+        DropDownPopulate(GetFabConProducts(), cmbfabcon)
+        DropDownPopulate(GetPowderProducts(), cmbpowder)
+
     End Sub
 
     Private Function IsValidTime(time As String) As Boolean
@@ -556,5 +562,13 @@ Public Class CreateOrder
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home_Page.ShowFormInPanel(frmForm3)
     End Sub
+
+    Private Sub DropDownPopulate(ByVal products As List(Of KeyValuePair(Of Integer, String)), productcmb As ComboBox)
+        Dim bindingList As New BindingList(Of KeyValuePair(Of Integer, String))(products)
+        productcmb.DataSource = bindingList
+        productcmb.DisplayMember = "Value"
+        productcmb.ValueMember = "Key"
+    End Sub
+
 End Class
 

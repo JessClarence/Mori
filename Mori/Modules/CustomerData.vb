@@ -177,6 +177,16 @@ Public Class CustomerData
             _Amount = value
         End Set
     End Property
+
+    Private _ProductID As String
+    Public Property ProductID() As String
+        Get
+            Return _ProductID
+        End Get
+        Set(ByVal value As String)
+            _ProductID = value
+        End Set
+    End Property
 End Class
 
 

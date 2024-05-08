@@ -32,9 +32,10 @@ Partial Class Products
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Orders = New System.Windows.Forms.DataGridView()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.product = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.type = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnEdit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.btnDelete = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Guna2CustomGradientPanel2.SuspendLayout()
@@ -202,7 +203,7 @@ Partial Class Products
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Orders.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.Orders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Orders.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.product, Me.Column1, Me.Column2, Me.btnEdit, Me.btnDelete})
+        Me.Orders.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.product, Me.type, Me.amount, Me.btnEdit, Me.btnDelete})
         Me.Orders.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Orders.Location = New System.Drawing.Point(0, 113)
         Me.Orders.Margin = New System.Windows.Forms.Padding(2)
@@ -216,6 +217,14 @@ Partial Class Products
         Me.Orders.Size = New System.Drawing.Size(1752, 495)
         Me.Orders.TabIndex = 63
         '
+        'id
+        '
+        Me.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.id.HeaderText = "ID"
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        Me.id.Width = 43
+        '
         'product
         '
         Me.product.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
@@ -223,18 +232,18 @@ Partial Class Products
         Me.product.Name = "product"
         Me.product.ReadOnly = True
         '
-        'Column1
+        'type
         '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.HeaderText = "Type"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
+        Me.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.type.HeaderText = "Type"
+        Me.type.Name = "type"
+        Me.type.ReadOnly = True
         '
-        'Column2
+        'amount
         '
-        Me.Column2.HeaderText = "Amount"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
+        Me.amount.HeaderText = "Amount"
+        Me.amount.Name = "amount"
+        Me.amount.ReadOnly = True
         '
         'btnEdit
         '
@@ -283,9 +292,10 @@ Partial Class Products
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Orders As DataGridView
+    Friend WithEvents id As DataGridViewTextBoxColumn
     Friend WithEvents product As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents type As DataGridViewTextBoxColumn
+    Friend WithEvents amount As DataGridViewTextBoxColumn
     Friend WithEvents btnEdit As DataGridViewButtonColumn
     Friend WithEvents btnDelete As DataGridViewButtonColumn
 End Class

@@ -30,6 +30,7 @@ Partial Class CreateOrder
         Me.ComputeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnBack = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.dtpDateToPickUp = New Guna.UI2.WinForms.Guna2DateTimePicker()
@@ -81,9 +82,8 @@ Partial Class CreateOrder
         Me.cmbfabcon = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.miniToolStrip = New System.Windows.Forms.MenuStrip()
         Me.btnCompute = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
+        Me.miniToolStrip = New System.Windows.Forms.MenuStrip()
         Me.Panel3.SuspendLayout()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -198,6 +198,32 @@ Partial Class CreateOrder
         Me.btnBack.TabIndex = 57
         Me.btnBack.Text = "Back"
         Me.btnBack.UseTransparentBackground = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Animated = True
+        Me.btnSave.BackColor = System.Drawing.Color.Transparent
+        Me.btnSave.BorderColor = System.Drawing.Color.LightCoral
+        Me.btnSave.BorderRadius = 4
+        Me.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSave.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Image = Global.Mori.My.Resources.Resources.icons8_save_24
+        Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnSave.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnSave.Location = New System.Drawing.Point(110, 511)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.PressedColor = System.Drawing.Color.AliceBlue
+        Me.btnSave.Size = New System.Drawing.Size(97, 37)
+        Me.btnSave.TabIndex = 14
+        Me.btnSave.Text = "Save"
+        Me.btnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.btnSave.UseTransparentBackground = True
         '
         'Guna2Panel5
         '
@@ -802,6 +828,7 @@ Partial Class CreateOrder
         '
         'cmbfabcon
         '
+        Me.cmbfabcon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbfabcon.BackColor = System.Drawing.Color.Transparent
         Me.cmbfabcon.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cmbfabcon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -861,19 +888,6 @@ Partial Class CreateOrder
         Me.Panel1.Size = New System.Drawing.Size(1265, 706)
         Me.Panel1.TabIndex = 0
         '
-        'miniToolStrip
-        '
-        Me.miniToolStrip.AccessibleName = "New item selection"
-        Me.miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox
-        Me.miniToolStrip.AutoSize = False
-        Me.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None
-        Me.miniToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.miniToolStrip.Location = New System.Drawing.Point(41, 2)
-        Me.miniToolStrip.Name = "miniToolStrip"
-        Me.miniToolStrip.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.miniToolStrip.Size = New System.Drawing.Size(1263, 24)
-        Me.miniToolStrip.TabIndex = 0
-        '
         'btnCompute
         '
         Me.btnCompute.BorderRadius = 4
@@ -896,31 +910,18 @@ Partial Class CreateOrder
         Me.btnCompute.Text = "Compute"
         Me.btnCompute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'btnSave
+        'miniToolStrip
         '
-        Me.btnSave.Animated = True
-        Me.btnSave.BackColor = System.Drawing.Color.Transparent
-        Me.btnSave.BorderColor = System.Drawing.Color.LightCoral
-        Me.btnSave.BorderRadius = 4
-        Me.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnSave.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Image = Global.Mori.My.Resources.Resources.icons8_save_24
-        Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnSave.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnSave.Location = New System.Drawing.Point(110, 511)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.PressedColor = System.Drawing.Color.AliceBlue
-        Me.btnSave.Size = New System.Drawing.Size(97, 37)
-        Me.btnSave.TabIndex = 14
-        Me.btnSave.Text = "Save"
-        Me.btnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.btnSave.UseTransparentBackground = True
+        Me.miniToolStrip.AccessibleName = "New item selection"
+        Me.miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox
+        Me.miniToolStrip.AutoSize = False
+        Me.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None
+        Me.miniToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.miniToolStrip.Location = New System.Drawing.Point(41, 2)
+        Me.miniToolStrip.Name = "miniToolStrip"
+        Me.miniToolStrip.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.miniToolStrip.Size = New System.Drawing.Size(1263, 24)
+        Me.miniToolStrip.TabIndex = 0
         '
         'CreateOrder
         '
