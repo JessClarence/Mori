@@ -45,14 +45,14 @@ Partial Class frmForm3
         Me.btnPayment = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.btnEdit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.btnDelete = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.txtSearch = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.btnCreate = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CustomGradientPanel2 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.btnCreate = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel2.SuspendLayout()
         CType(Me.Orders, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -109,7 +109,7 @@ Partial Class frmForm3
         Me.OrderNumber.MinimumWidth = 6
         Me.OrderNumber.Name = "OrderNumber"
         Me.OrderNumber.ReadOnly = True
-        Me.OrderNumber.Width = 90
+        Me.OrderNumber.Width = 98
         '
         'CustomerName
         '
@@ -287,48 +287,6 @@ Partial Class frmForm3
         Me.btnDelete.Text = "DELETE"
         Me.btnDelete.UseColumnTextForButtonValue = True
         '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Guna2Button3.Animated = True
-        Me.Guna2Button3.BorderRadius = 8
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Olive
-        Me.Guna2Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Image = Global.Mori.My.Resources.Resources.icons8_edit_50
-        Me.Guna2Button3.Location = New System.Drawing.Point(1044, 658)
-        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.PressedColor = System.Drawing.Color.Blue
-        Me.Guna2Button3.Size = New System.Drawing.Size(78, 26)
-        Me.Guna2Button3.TabIndex = 5
-        Me.Guna2Button3.Text = "Edit"
-        '
-        'Guna2Button2
-        '
-        Me.Guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Guna2Button2.Animated = True
-        Me.Guna2Button2.BorderRadius = 8
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Image = Global.Mori.My.Resources.Resources.icons8_delete_24
-        Me.Guna2Button2.Location = New System.Drawing.Point(962, 658)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.PressedColor = System.Drawing.Color.Blue
-        Me.Guna2Button2.Size = New System.Drawing.Size(64, 26)
-        Me.Guna2Button2.TabIndex = 4
-        Me.Guna2Button2.Text = "Delete"
-        '
         'txtSearch
         '
         Me.txtSearch.Animated = True
@@ -398,6 +356,21 @@ Partial Class frmForm3
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1488, 113)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
         '
+        'Guna2CustomGradientPanel2
+        '
+        Me.Guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel2.Controls.Add(Me.btnCreate)
+        Me.Guna2CustomGradientPanel2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Guna2CustomGradientPanel2.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(1363, 0)
+        Me.Guna2CustomGradientPanel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
+        Me.Guna2CustomGradientPanel2.Size = New System.Drawing.Size(125, 113)
+        Me.Guna2CustomGradientPanel2.TabIndex = 7
+        '
         'btnCreate
         '
         Me.btnCreate.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -415,20 +388,47 @@ Partial Class frmForm3
         Me.btnCreate.TabIndex = 2
         Me.btnCreate.Text = "CREATE"
         '
-        'Guna2CustomGradientPanel2
+        'Guna2Button3
         '
-        Me.Guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel2.Controls.Add(Me.btnCreate)
-        Me.Guna2CustomGradientPanel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Guna2CustomGradientPanel2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.Transparent
-        Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(1363, 0)
-        Me.Guna2CustomGradientPanel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
-        Me.Guna2CustomGradientPanel2.Size = New System.Drawing.Size(125, 113)
-        Me.Guna2CustomGradientPanel2.TabIndex = 7
+        Me.Guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Guna2Button3.Animated = True
+        Me.Guna2Button3.BorderRadius = 8
+        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button3.FillColor = System.Drawing.Color.Olive
+        Me.Guna2Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.Image = Global.Mori.My.Resources.Resources.icons8_edit_50
+        Me.Guna2Button3.Location = New System.Drawing.Point(1044, 658)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.PressedColor = System.Drawing.Color.Blue
+        Me.Guna2Button3.Size = New System.Drawing.Size(78, 26)
+        Me.Guna2Button3.TabIndex = 5
+        Me.Guna2Button3.Text = "Edit"
+        '
+        'Guna2Button2
+        '
+        Me.Guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Guna2Button2.Animated = True
+        Me.Guna2Button2.BorderRadius = 8
+        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.Image = Global.Mori.My.Resources.Resources.icons8_delete_24
+        Me.Guna2Button2.Location = New System.Drawing.Point(962, 658)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.PressedColor = System.Drawing.Color.Blue
+        Me.Guna2Button2.Size = New System.Drawing.Size(64, 26)
+        Me.Guna2Button2.TabIndex = 4
+        Me.Guna2Button2.Text = "Delete"
         '
         'frmForm3
         '

@@ -29,7 +29,7 @@ Partial Class CreateOrder
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComputeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnBack = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.dtpDateToPickUp = New Guna.UI2.WinForms.Guna2DateTimePicker()
@@ -80,10 +80,10 @@ Partial Class CreateOrder
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmbfabcon = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnCompute = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.miniToolStrip = New System.Windows.Forms.MenuStrip()
-        Me.btnBack = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnCompute = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3.SuspendLayout()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -175,31 +175,29 @@ Partial Class CreateOrder
         Me.Panel2.Size = New System.Drawing.Size(580, 591)
         Me.Panel2.TabIndex = 28
         '
-        'btnSave
+        'btnBack
         '
-        Me.btnSave.Animated = True
-        Me.btnSave.BackColor = System.Drawing.Color.Transparent
-        Me.btnSave.BorderColor = System.Drawing.Color.LightCoral
-        Me.btnSave.BorderRadius = 4
-        Me.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnSave.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Image = Global.Mori.My.Resources.Resources.icons8_save_24
-        Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnSave.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnSave.Location = New System.Drawing.Point(110, 511)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.PressedColor = System.Drawing.Color.AliceBlue
-        Me.btnSave.Size = New System.Drawing.Size(97, 37)
-        Me.btnSave.TabIndex = 14
-        Me.btnSave.Text = "Save"
-        Me.btnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.btnSave.UseTransparentBackground = True
+        Me.btnBack.Animated = True
+        Me.btnBack.BackColor = System.Drawing.Color.Transparent
+        Me.btnBack.BorderColor = System.Drawing.Color.LightCoral
+        Me.btnBack.BorderRadius = 4
+        Me.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnBack.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnBack.ForeColor = System.Drawing.Color.White
+        Me.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnBack.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnBack.Location = New System.Drawing.Point(236, 511)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.PressedColor = System.Drawing.Color.AliceBlue
+        Me.btnBack.Size = New System.Drawing.Size(97, 37)
+        Me.btnBack.TabIndex = 57
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseTransparentBackground = True
         '
         'Guna2Panel5
         '
@@ -832,28 +830,6 @@ Partial Class CreateOrder
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Fab con"
         '
-        'btnCompute
-        '
-        Me.btnCompute.BorderRadius = 4
-        Me.btnCompute.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnCompute.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnCompute.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnCompute.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnCompute.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.btnCompute.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.btnCompute.ForeColor = System.Drawing.Color.White
-        Me.btnCompute.Image = Global.Mori.My.Resources.Resources.icons8_check_50
-        Me.btnCompute.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnCompute.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnCompute.Location = New System.Drawing.Point(1077, 624)
-        Me.btnCompute.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCompute.Name = "btnCompute"
-        Me.btnCompute.PressedColor = System.Drawing.Color.AliceBlue
-        Me.btnCompute.Size = New System.Drawing.Size(114, 37)
-        Me.btnCompute.TabIndex = 57
-        Me.btnCompute.Text = "Compute"
-        Me.btnCompute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLightLight
@@ -898,29 +874,53 @@ Partial Class CreateOrder
         Me.miniToolStrip.Size = New System.Drawing.Size(1263, 24)
         Me.miniToolStrip.TabIndex = 0
         '
-        'btnBack
+        'btnCompute
         '
-        Me.btnBack.Animated = True
-        Me.btnBack.BackColor = System.Drawing.Color.Transparent
-        Me.btnBack.BorderColor = System.Drawing.Color.LightCoral
-        Me.btnBack.BorderRadius = 4
-        Me.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnBack.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
-        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnBack.ForeColor = System.Drawing.Color.White
-        Me.btnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnBack.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnBack.Location = New System.Drawing.Point(236, 511)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.PressedColor = System.Drawing.Color.AliceBlue
-        Me.btnBack.Size = New System.Drawing.Size(97, 37)
-        Me.btnBack.TabIndex = 57
-        Me.btnBack.Text = "Back"
-        Me.btnBack.UseTransparentBackground = True
+        Me.btnCompute.BorderRadius = 4
+        Me.btnCompute.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnCompute.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnCompute.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnCompute.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnCompute.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.btnCompute.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btnCompute.ForeColor = System.Drawing.Color.White
+        Me.btnCompute.Image = Global.Mori.My.Resources.Resources.icons8_check_50
+        Me.btnCompute.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnCompute.ImageSize = New System.Drawing.Size(25, 25)
+        Me.btnCompute.Location = New System.Drawing.Point(1077, 624)
+        Me.btnCompute.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCompute.Name = "btnCompute"
+        Me.btnCompute.PressedColor = System.Drawing.Color.AliceBlue
+        Me.btnCompute.Size = New System.Drawing.Size(114, 37)
+        Me.btnCompute.TabIndex = 57
+        Me.btnCompute.Text = "Compute"
+        Me.btnCompute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'btnSave
+        '
+        Me.btnSave.Animated = True
+        Me.btnSave.BackColor = System.Drawing.Color.Transparent
+        Me.btnSave.BorderColor = System.Drawing.Color.LightCoral
+        Me.btnSave.BorderRadius = 4
+        Me.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSave.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Image = Global.Mori.My.Resources.Resources.icons8_save_24
+        Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnSave.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnSave.Location = New System.Drawing.Point(110, 511)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.PressedColor = System.Drawing.Color.AliceBlue
+        Me.btnSave.Size = New System.Drawing.Size(97, 37)
+        Me.btnSave.TabIndex = 14
+        Me.btnSave.Text = "Save"
+        Me.btnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.btnSave.UseTransparentBackground = True
         '
         'CreateOrder
         '

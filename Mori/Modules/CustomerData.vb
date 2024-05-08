@@ -146,6 +146,37 @@ Public Class CustomerData
             _Total = value
         End Set
     End Property
+
+    'Product'
+    Private _ProductName As String
+    Public Property ProductName() As String
+        Get
+            Return _ProductName
+        End Get
+        Set(ByVal value As String)
+            _ProductName = value
+        End Set
+    End Property
+
+    Private _Type As String
+    Public Property Type() As String
+        Get
+            Return _Type
+        End Get
+        Set(ByVal value As String)
+            _Type = value
+        End Set
+    End Property
+
+    Private _Amount As Integer
+    Public Property Amount() As Integer
+        Get
+            Return _Amount
+        End Get
+        Set(ByVal value As Integer)
+            _Amount = value
+        End Set
+    End Property
 End Class
 
 

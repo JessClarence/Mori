@@ -23,6 +23,7 @@ Partial Class Home_Page
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnProducts = New Guna.UI2.WinForms.Guna2Button()
         Me.btnTransHistory = New Guna.UI2.WinForms.Guna2Button()
         Me.btnAboutus = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
@@ -62,6 +63,7 @@ Partial Class Home_Page
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.btnProducts)
         Me.PanelMenu.Controls.Add(Me.btnTransHistory)
         Me.PanelMenu.Controls.Add(Me.btnAboutus)
         Me.PanelMenu.Controls.Add(Me.Guna2Button1)
@@ -77,6 +79,32 @@ Partial Class Home_Page
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(176, 667)
         Me.PanelMenu.TabIndex = 0
+        '
+        'btnProducts
+        '
+        Me.btnProducts.Animated = True
+        Me.btnProducts.BackColor = System.Drawing.Color.Transparent
+        Me.btnProducts.BorderRadius = 4
+        Me.btnProducts.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnProducts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnProducts.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnProducts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnProducts.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnProducts.FillColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.btnProducts.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btnProducts.ForeColor = System.Drawing.Color.Black
+        Me.btnProducts.Image = Global.Mori.My.Resources.Resources.icons8_check_50
+        Me.btnProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnProducts.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnProducts.Location = New System.Drawing.Point(2, 371)
+        Me.btnProducts.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnProducts.Name = "btnProducts"
+        Me.btnProducts.PressedColor = System.Drawing.Color.Blue
+        Me.btnProducts.Size = New System.Drawing.Size(174, 76)
+        Me.btnProducts.TabIndex = 14
+        Me.btnProducts.Text = "Products"
+        Me.btnProducts.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.btnProducts.UseTransparentBackground = True
         '
         'btnTransHistory
         '
@@ -465,4 +493,5 @@ Partial Class Home_Page
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Panel12 As Panel
+    Friend WithEvents btnProducts As Guna.UI2.WinForms.Guna2Button
 End Class

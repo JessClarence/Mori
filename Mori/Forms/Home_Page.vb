@@ -71,6 +71,10 @@ Public Class Home_Page
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub btnProducts_Click(sender As Object, e As EventArgs) Handles btnProducts.Click
+        ShowFormInPanel(Products)
+    End Sub
 End Class
 
 

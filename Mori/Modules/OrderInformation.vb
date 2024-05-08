@@ -53,4 +53,30 @@
         End Try
     End Sub
 
+    Public Sub GetProducts(OrdersList As DataGridView)
+        Try
+            Dim OrderData As New CustomerData
+            Connect()
+            query = "SELECT * FROM mori_laundry.product"
+            With Command
+                .Connection = conn
+                .CommandText = query
+                reader = .ExecuteReader
+            End With
+            OrdersList.Rows.Clear()
+            While reader.Read
+                With OrderData
+
+                    .ProductName = reader("product").ToString()
+                    .Type = reader("type").ToString()
+                    .Amount = reader("amount").ToString()
+                End With
+                OrdersList.Rows.Add(OrderData.ProductName, OrderData.Type, OrderData.Amount)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+
 End Module

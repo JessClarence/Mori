@@ -169,59 +169,71 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangePass.Designer.vb">
+    <Compile Include="Forms\ChangePass.Designer.vb">
       <DependentUpon>ChangePass.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChangePass.vb">
+    <Compile Include="Forms\ChangePass.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerData.vb" />
-    <Compile Include="DarkModeManager.vb" />
-    <Compile Include="DBConnection.vb" />
-    <Compile Include="EditForm.Designer.vb">
+    <Compile Include="Forms\CreateProducts.Designer.vb">
+      <DependentUpon>CreateProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products.Designer.vb">
+      <DependentUpon>Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomerData.vb" />
+    <Compile Include="Modules\DarkModeManager.vb" />
+    <Compile Include="Modules\DBConnection.vb" />
+    <Compile Include="Forms\EditForm.Designer.vb">
       <DependentUpon>EditForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="EditForm.vb">
+    <Compile Include="Forms\EditForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="Forms\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateOrder.Designer.vb">
+    <Compile Include="Forms\CreateOrder.Designer.vb">
       <DependentUpon>CreateOrder.vb</DependentUpon>
     </Compile>
-    <Compile Include="CreateOrder.vb">
+    <Compile Include="Forms\CreateOrder.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmForm3.Designer.vb">
+    <Compile Include="Forms\frmForm3.Designer.vb">
       <DependentUpon>frmForm3.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmForm3.vb">
+    <Compile Include="Forms\frmForm3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmForm4.Designer.vb">
+    <Compile Include="Forms\frmForm4.Designer.vb">
       <DependentUpon>frmForm4.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmForm4.vb">
+    <Compile Include="Forms\frmForm4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmForm5.Designer.vb">
+    <Compile Include="Forms\frmForm5.Designer.vb">
       <DependentUpon>frmForm5.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmForm5.vb">
+    <Compile Include="Forms\frmForm5.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home_Page.Designer.vb">
+    <Compile Include="Forms\Home_Page.Designer.vb">
       <DependentUpon>Home_Page.vb</DependentUpon>
     </Compile>
-    <Compile Include="Home_Page.vb">
+    <Compile Include="Forms\Home_Page.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module1.vb" />
+    <Compile Include="Modules\Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -238,39 +250,45 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="OrderInformation.vb" />
-    <Compile Include="SettingsManager.vb" />
-    <Compile Include="TransactionHistory.Designer.vb">
+    <Compile Include="Modules\OrderInformation.vb" />
+    <Compile Include="Modules\SettingsManager.vb" />
+    <Compile Include="Forms\TransactionHistory.Designer.vb">
       <DependentUpon>TransactionHistory.vb</DependentUpon>
     </Compile>
-    <Compile Include="TransactionHistory.vb">
+    <Compile Include="Forms\TransactionHistory.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ChangePass.resx">
+    <EmbeddedResource Include="Forms\ChangePass.resx">
       <DependentUpon>ChangePass.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditForm.resx">
+    <EmbeddedResource Include="Forms\EditForm.resx">
       <DependentUpon>EditForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateOrder.resx">
+    <EmbeddedResource Include="Forms\CreateOrder.resx">
       <DependentUpon>CreateOrder.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmForm3.resx">
+    <EmbeddedResource Include="Forms\frmForm3.resx">
       <DependentUpon>frmForm3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmForm4.resx">
+    <EmbeddedResource Include="Forms\frmForm4.resx">
       <DependentUpon>frmForm4.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmForm5.resx">
+    <EmbeddedResource Include="Forms\frmForm5.resx">
       <DependentUpon>frmForm5.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home_Page.resx">
+    <EmbeddedResource Include="Forms\Home_Page.resx">
       <DependentUpon>Home_Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateProducts.resx">
+      <DependentUpon>CreateProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Products.resx">
+      <DependentUpon>Products.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -278,7 +296,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TransactionHistory.resx">
+    <EmbeddedResource Include="Forms\TransactionHistory.resx">
       <DependentUpon>TransactionHistory.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
