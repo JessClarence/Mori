@@ -36,6 +36,8 @@ Partial Class EditProducts
         Me.txtTotal = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtId = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -44,6 +46,8 @@ Partial Class EditProducts
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.txtId)
+        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.txtAmount)
         Me.Panel1.Controls.Add(Me.Label4)
@@ -267,6 +271,43 @@ Partial Class EditProducts
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1227, 113)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(76, 125)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(33, 20)
+        Me.Label1.TabIndex = 62
+        Me.Label1.Text = "ID:"
+        '
+        'txtId
+        '
+        Me.txtId.BorderColor = System.Drawing.SystemColors.Control
+        Me.txtId.BorderRadius = 8
+        Me.txtId.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtId.DefaultText = ""
+        Me.txtId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtId.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtId.Enabled = False
+        Me.txtId.FillColor = System.Drawing.SystemColors.Control
+        Me.txtId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtId.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtId.ForeColor = System.Drawing.Color.Black
+        Me.txtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtId.Location = New System.Drawing.Point(138, 118)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtId.Name = "txtId"
+        Me.txtId.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtId.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtId.PlaceholderText = ""
+        Me.txtId.SelectedText = ""
+        Me.txtId.Size = New System.Drawing.Size(83, 32)
+        Me.txtId.TabIndex = 63
+        '
         'EditProducts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -297,4 +338,6 @@ Partial Class EditProducts
     Friend WithEvents txtTotal As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtId As Guna.UI2.WinForms.Guna2TextBox
 End Class

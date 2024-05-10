@@ -242,8 +242,8 @@ Public Class CreateOrder
                 .Parameters.AddWithValue("@GarmentType", cmbGarments.SelectedItem.ToString())
                 .Parameters.AddWithValue("@Service", cmbService.SelectedItem.ToString())
                 .Parameters.AddWithValue("@Kilogram", Convert.ToDouble(txtKilogram.Text))
-                .Parameters.AddWithValue("@fabCon", cmbfabcon.SelectedItem.ToString())
-                .Parameters.AddWithValue("@powder", cmbpowder.SelectedItem.ToString())
+                .Parameters.AddWithValue("@fabCon", cmbfabcon.SelectedItem.Value.ToString())
+                .Parameters.AddWithValue("@powder", cmbpowder.SelectedItem.Value.ToString())
                 .Parameters.AddWithValue("@FabConQty", Convert.ToInt32(fabQty.Value))
                 .Parameters.AddWithValue("@PowderQty", Convert.ToInt32(powderQty.Value))
                 .Parameters.AddWithValue("@Total", Convert.ToInt32(txtTotal.Text))
@@ -481,11 +481,9 @@ Public Class CreateOrder
             Return
         End If
 
-        ' Calculate load count based on garment type
         Dim loadCount As Integer = 1
         Select Case cmbGarments.SelectedItem.ToString()
             Case "Regular Clothes"
-                ' Check if kilogram exceeds threshold, increment loadCount accordingly
                 If kilogram > LOAD_THRESHOLD Then
                     loadCount = Math.Ceiling(kilogram / LOAD_THRESHOLD)
                 End If
@@ -520,22 +518,16 @@ Public Class CreateOrder
 
         ' Calculate fabcon price
         Dim fabconPrice As Integer = 0
-        If cmbfabcon.Enabled AndAlso cmbfabcon.SelectedItem.ToString() <> "none" Then
-            If Convert.ToInt32(fabQty.Value) = 0 Then
-                lblNoFabQty.Text = "Quantity for fabcon cannot be empty."
-                Return
-            End If
-            fabconPrice = Convert.ToInt32(fabQty.Value) * GetFabconPrice(cmbfabcon.SelectedItem.ToString())
+        If cmbfabcon.Enabled AndAlso cmbfabcon.SelectedItem IsNot Nothing AndAlso cmbfabcon.SelectedItem.ToString() <> "none" Then
+            Dim selectedFabcon As KeyValuePair(Of Integer, String) = DirectCast(cmbfabcon.SelectedItem, KeyValuePair(Of Integer, String))
+            fabconPrice = Convert.ToInt32(fabQty.Value) * selectedFabcon.Key ' Use the Key as the amount
         End If
 
         ' Calculate powder price
         Dim powderPrice As Integer = 0
-        If cmbpowder.Enabled AndAlso cmbpowder.SelectedItem.ToString() <> "none" Then
-            If Convert.ToInt32(powderQty.Value) = 0 Then
-                lblNoPowderQty.Text = "Quantity for powder cannot be empty."
-                Return
-            End If
-            powderPrice = Convert.ToInt32(powderQty.Value) * GetPowderPrice(cmbpowder.SelectedItem.ToString())
+        If cmbpowder.Enabled AndAlso cmbpowder.SelectedItem IsNot Nothing AndAlso cmbpowder.SelectedItem.ToString() <> "none" Then
+            Dim selectedPowder As KeyValuePair(Of Integer, String) = DirectCast(cmbpowder.SelectedItem, KeyValuePair(Of Integer, String))
+            powderPrice = Convert.ToInt32(powderQty.Value) * selectedPowder.Key ' Use the Key as the amount
         End If
 
         ' Calculate total price
@@ -561,6 +553,7 @@ Public Class CreateOrder
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home_Page.ShowFormInPanel(frmForm3)
+        GetOrders(frmForm3.Orders)
     End Sub
 
     Private Sub DropDownPopulate(ByVal products As List(Of KeyValuePair(Of Integer, String)), productcmb As ComboBox)
