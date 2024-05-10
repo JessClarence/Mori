@@ -4,6 +4,7 @@ Imports Mysqlx.Crud
 Imports System.IO
 Imports iTextSharp.text
 Imports iTextSharp.text.pdf
+Imports System.ComponentModel
 
 Public Class EditForm
 
@@ -37,16 +38,16 @@ Public Class EditForm
     End Function
 
     Private Sub cmbfabcon_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbfabcon.SelectedIndexChanged
-        If cmbfabcon.SelectedItem = "none" Then
-            fabQty.Value = 0
+        'If cmbfabcon.SelectedItem = "none" Then
+        '    fabQty.Value = 0
 
-        End If
+        'End If
     End Sub
 
     Private Sub cmbpowder_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbpowder.SelectedIndexChanged
-        If cmbpowder.SelectedItem = "none" Then
-            powderQty.Value = 0
-        End If
+        'If cmbpowder.SelectedItem = "none" Then
+        '    powderQty.Value = 0
+        'End If
     End Sub
 
     Private Sub cmbService_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbService.SelectedIndexChanged
@@ -136,8 +137,8 @@ Public Class EditForm
                 .Parameters.AddWithValue("@GarmentType", cmbGarments.SelectedItem.ToString())
                 .Parameters.AddWithValue("@Service", cmbService.SelectedItem.ToString())
                 .Parameters.AddWithValue("@Kilogram", Convert.ToDouble(txtKilogram.Text))
-                .Parameters.AddWithValue("@fabCon", cmbfabcon.SelectedItem.ToString())
-                .Parameters.AddWithValue("@powder", cmbpowder.SelectedItem.ToString())
+                .Parameters.AddWithValue("@fabCon", cmbfabcon.SelectedItem.Value.ToString())
+                .Parameters.AddWithValue("@powder", cmbpowder.SelectedItem.Value.ToString())
                 .Parameters.AddWithValue("@FabConQty", Convert.ToInt32(fabQty.Value))
                 .Parameters.AddWithValue("@PowderQty", Convert.ToInt32(powderQty.Value))
                 .Parameters.AddWithValue("@Total", Convert.ToInt32(txtTotal.Text))
@@ -162,8 +163,8 @@ Public Class EditForm
                     updatedRow.Cells("GarmentType").Value = cmbGarments.SelectedItem.ToString()
                     updatedRow.Cells("Service").Value = cmbService.SelectedItem.ToString()
                     updatedRow.Cells("Kilogram").Value = Convert.ToDouble(txtKilogram.Text)
-                    updatedRow.Cells("fabCon").Value = cmbfabcon.SelectedItem.ToString()
-                    updatedRow.Cells("Powder").Value = cmbpowder.SelectedItem.ToString()
+                    updatedRow.Cells("fabCon").Value = cmbfabcon.SelectedItem.Value.ToString()
+                    updatedRow.Cells("Powder").Value = cmbpowder.SelectedItem.Value.ToString()
                     updatedRow.Cells("FabConQty").Value = Convert.ToInt32(fabQty.Value)
                     updatedRow.Cells("PowderQty").Value = Convert.ToInt32(powderQty.Value)
                     updatedRow.Cells("Total").Value = Convert.ToInt32(txtTotal.Text)
@@ -346,7 +347,8 @@ Public Class EditForm
             txtTimeToPickUp.Text = selectedRow.Cells("TimeToPickUp").Value.ToString()
             dudPmAM.SelectedItem = selectedRow.Cells("PMorAm").Value.ToString()
 
-
+            DropDownPopulate(GetFabConProducts(), cmbfabcon)
+            DropDownPopulate(GetPowderProducts(), cmbpowder)
         End If
     End Sub
 
@@ -401,30 +403,29 @@ Public Class EditForm
             servicePrice = CInt(servicePrice * 0.75) ' 25% discount
         End If
 
-        ' Calculate fabcon price if fabcon is selected
+        ' Calculate fabcon price
         Dim fabconPrice As Integer = 0
-        If cmbfabcon.Enabled AndAlso cmbfabcon.SelectedItem.ToString() <> "none" Then
-            Dim fabQtyValue As Integer = Convert.ToInt32(fabQty.Value)
-            If fabQtyValue <= 0 Then
-                lblNoFabQty.Text = "Quantity for fabcon must be greater than zero."
-                Return
-            End If
-            fabconPrice = fabQtyValue * GetFabconPrice(cmbfabcon.SelectedItem.ToString())
+        If cmbfabcon.Enabled AndAlso cmbfabcon.SelectedItem IsNot Nothing AndAlso cmbfabcon.SelectedItem.ToString() <> "none" Then
+            Dim selectedFabcon As KeyValuePair(Of Integer, String) = DirectCast(cmbfabcon.SelectedItem, KeyValuePair(Of Integer, String))
+            fabconPrice = Convert.ToInt32(fabQty.Value) * selectedFabcon.Key ' Use the Key as the amount
         End If
 
-        ' Calculate powder price if powder is selected
+        ' Calculate powder price
         Dim powderPrice As Integer = 0
-        If cmbpowder.Enabled AndAlso cmbpowder.SelectedItem.ToString() <> "none" Then
-            Dim powderQtyValue As Integer = Convert.ToInt32(powderQty.Value)
-            If powderQtyValue <= 0 Then
-                lblNoPowderQty.Text = "Quantity for powder must be greater than zero."
-                Return
-            End If
-            powderPrice = powderQtyValue * GetPowderPrice(cmbpowder.SelectedItem.ToString())
+        If cmbpowder.Enabled AndAlso cmbpowder.SelectedItem IsNot Nothing AndAlso cmbpowder.SelectedItem.ToString() <> "none" Then
+            Dim selectedPowder As KeyValuePair(Of Integer, String) = DirectCast(cmbpowder.SelectedItem, KeyValuePair(Of Integer, String))
+            powderPrice = Convert.ToInt32(powderQty.Value) * selectedPowder.Key ' Use the Key as the amount
         End If
 
         ' Calculate total price
         Dim total As Integer = servicePrice + fabconPrice + powderPrice
         txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub DropDownPopulate(ByVal products As List(Of KeyValuePair(Of Integer, String)), productcmb As ComboBox)
+        Dim bindingList As New BindingList(Of KeyValuePair(Of Integer, String))(products)
+        productcmb.DataSource = bindingList
+        productcmb.DisplayMember = "Value"
+        productcmb.ValueMember = "Key"
     End Sub
 End Class
